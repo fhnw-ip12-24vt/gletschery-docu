@@ -1,0 +1,31 @@
+= PI-Camera Halterung
+
+*Datum:* Di, 17.12.2024
+
+*Testziel:*
+
+- [x] Eine Vorrichtung um die PI-Kamera aufzunehmen und zu positionieren
+
+'''
+
+*Testdetails:*
+
+Konstruktion Details
+
+- Basisplatte: 30x30x3
+- Abstandhalter: 5mm Höhe, 4.5mm Durchmesser
+- Position-Pins: 3mm Höhe, 2mm Durchmesser
+- Bohrungen für Schrauben: durchgehend, 1.5mm Durchmesser
+- Bohrung Basisplatte: 4mm Durchmesser, gesenkt
+
+3D-Druck Details
+
+- Druckeinstellungen: Voreinstellungen modifiziert: PLA; 0.4 Nozzle; 0.2 Speed; glattePlatte; Perimeter: 3mm; Deckenfüllmuster: Ausgerichtet Geradlinig; Randbreite: 3mm; Infill: 15%, Füllmuster: Gitternetz; generiere Stützmaterial + Stützen automatische generieren;
+
+
+'''
+
+*Ergebnis:*
+
+- Druckqualität gut für Einsatz
+- Konstruktionsverbesserungen: Bohrungen von 1.5mm auf 2mm vergrössern damit Schrauben besser aufgenommen werden können; Basisplatte um eine Bohrung erweitern damit die Ausrichtung der Basisplatte Form- und nicht nur kraftschlüssig ist.

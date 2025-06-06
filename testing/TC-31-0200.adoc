@@ -1,0 +1,35 @@
+= Übergabeprotokoll Primeo Energie
+
+|===
+|Doc-ID: | TC-31-0200
+|Datum: | tbd
+|Übergabe durchgeführt durch: | Primeo Energie
+|===
+
+== Beschreibung
+
+Dieses Dokument soll sicherstellen, dass alle benötigten Dokumente vollständig übergeben werden.
+
+== Inhalt
+
+=== Administratives
+
+- [ ] Eine komplettes und unterschriebenes Übergabeprotokoll
+- [ ] Zugriff auf das Code-Repository
+- [ ] Zugriff auf das Docu-Repository
+
+=== Hardware
+
+- [ ] Die physische Box
+- [ ] Stromkabel
+- [ ] Memorykarten
+- [ ] Ersatzkarten
+- [ ] Ersatzhalterung PI-Kamera
+- [ ] Dokumentation mit Teilliste und Abmessungen
+
+=== Software
+
+- [ ] Dokumentation in Form des SAD
+- [ ] Deployment-Anleitung
+
+

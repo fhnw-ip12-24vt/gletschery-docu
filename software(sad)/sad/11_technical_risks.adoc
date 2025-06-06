@@ -1,0 +1,132 @@
+[[section-technical-risks]]
+== Risiken und technische Schulden
+== Technische Risiken
+
+=== 1. Risiko
+
+==== Beschreibung
+Scannen der QR-Codes stösst an technische Limitationen aufgrund der Prozessorleistung des PI.
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Der Spielfluss ist unzuverlässig und es kommt zu Lags.
+|Variablen, Bildgrösse und Scanintervalle im Auge behalten und aktiv Einfluss darauf nehmen, was wir der Software abverlangen.
+|===
+
+=== 2. Risiko
+==== Beschreibung
+Scannen der QR-Codes funktioniert aufgrund physikalischer Umgebungsvariablen nicht.
+
+[cols="1,2" options="header"]
+|===
+|Konsequenz |Massnahme
+
+|Unzuverlässiger bis unmöglicher Spielfluss.
+|So früh wie möglich viele Variablen eliminieren und Lösungsstrategien austesten.
+|===
+
+==== Abgrenzung QR-Code Scan
+[cols="1,2" options="header"]
+|===
+|Name |Massnahme
+
+| Helligkeit | In der Gletschery Box wird eine LED Leiste installiert. So wird sichergestellt, dass ausreichend Licht vorhanden ist.
+| Lichteinwirkung | Um Lichteinwirkung von Aussen zu minimieren wird der Kunde darüber informiert, die Spielfläche nicht unter einer Lampe oder direkt am Fenster zu platzieren.
+| Spiegelungen| Die Spiegelungen sollen durch eine in die Wand eingebaute Installation der LED Leiste und einer Milchglas-Schiene verhindert werden.
+| Ausrichtung der Karten| Um fehlerhafte Scans aufgrund der Rotation der Karten zu minimieren, wird ein Gitter auf der Spielfläche angebracht. So wird sichergestellt, dass alle Karten gleich ausgerichtet sind.
+|===
+
+=== 3. Risiko
+==== Beschreibung
+Hardware wird nicht fertig oder entspricht nicht den Anforderungen.
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Unzuverlässiger Input und Output für den User.
+|Frühes Testen der Komponenten, sodass genug Zeit bleibt um zu reagieren.
+|===
+
+=== 4. Risiko
+==== Beschreibung
+Software wird nicht fertig oder entspricht nicht den Anforderungen.
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Lags, unzuverlässiger Spielfluss und unzuverlässiger Input/Output für User.
+|Fokus auf Hauptfeatures. Frühes Testen der Software, sodass genug Zeit bleibt um zu reagieren.
+|===
+
+=== 5. Risiko
+==== Beschreibung
+Keine passenden Bilder gefunden oder Nutzungsrechte werden nicht zugesagt.
+
+|===
+|Konsequenzen |Massnahmen
+
+|Visuelle Umsetzung der Produktvision kann nicht umgesetzt werden.
+|Frühes Aussuchen der Inhalte und Abklären der Nutzungsrechte.
+|===
+
+=== 6. Risiko
+==== Beschreibung
+Verlust von Code oder Dokumentation.
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Arbeit geht verloren und wir werden im Projektfortschritt zurückgeworfen.
+|Wir arbeiten mit Gitlab. Auf dem main-Branch befindet sich immer die momentan funktionale Version. In Feature Branches wird am Projekt gearbeitet und nach Bestehen der Tests werden diese mit dem main gemerged. Zusätzlich klonen drei Teammitglieder regelmässig das gesamte Repository, damit immer eine lokale Kopie vorhanden ist.
+|===
+
+=== 7. Risiko
+==== Beschreibung
+Defekte treten kurz vor der Abgabe auf.
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Es bleibt nicht genügend Zeit, um das Produkt wieder auf einen übergabefähigen Stand zu bringen.
+|Regelmässiges Testen und betreiben der Hardware.
+|===
+
+== Personelle Risiken
+
+=== 8. Risiko
+==== Beschreibung
+Streit im Team
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Moral und Motivation gehen verloren. Da wir ein kleines Team sind, entspräche dies einem erheblichen Wegfall von produktiver Zeit.
+|Offene Kommunikation, Kultur von häufigem Feedback, sodass dieses auch inhaltlich und nicht persönlich verstanden wird. Individuelles Empfinden akzeptieren, verstehen und managen.
+
+|===
+
+=== 9. Risiko
+==== Beschreibung
+Personelle Ausfälle
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Da wir ein kleines Team sind, entspräche dies einem erheblichen Wegfall von produktiver Zeit.
+|Stetiger Wissenstransfer. Geleistete Arbeit wird wöchentlich kommuniziert und Ergebnisse für alle erreichbar abgelegt.
+
+|===
+
+== Organisatorische Risiken
+
+=== 10. Risiko
+==== Beschreibung
+Zentrale Deliverables gehen vergessen.
+[cols="1,2" options="header"]
+|===
+|Konsequenzen |Massnahmen
+
+|Unzufriedener Kunde und Jury. Tadel sowie Notenabzug.
+|Gute Planung, Controlling der Planung und proaktiv Feedback bei Teamcoach einholen.
+|===

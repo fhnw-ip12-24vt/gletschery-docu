@@ -1,0 +1,37 @@
+= Memory-Karten Test 3
+
+*Datum:* Mi, 27.11.2024
+
+*Testziel:*
+
+- [x] Verschiedene Dicken und weitere Form für UX-Tests
+- [x] Analyse & Verbesserungspotenzial der Druckqualität
+
+'''
+
+*Testdetails:*
+
+Konstruktion Details
+
+- Grösse: 60x60x5
+- Eckform: Spitz
+- je zwei verschiedene Dicken in 6mm und 7mm
+- alle Karten haben oben und unten eine Vertiefung von 1 um Bild/QR-Code zu platzieren
+- alle scharfen Aussenkanten haben eine Fase von 0.5
+- Files: xref:3D_Files/memory-cards-v3 60x60x6.stl[memory-cards-v3 60x60x6.stl] ; xref:3D_Files/memory-cards-v3 60x60x7.stl[memory-cards-v3 60x60x7.stl]
+
+3D-Druck Details
+
+- Anzahl Karten: 2
+- Grössen: 60x60x6 und 60x60x7
+- Druckeinstellungen: Voreinstellungen modifiziert: PLA; 0.4 Nozzle; 0.2 Speed; glattePlatte; Infill: 15%, Füllmuster: Gitternetz; generiere Stützmaterial + Stützen automatische generieren; Perimeter 4mm
+
+
+'''
+
+*Ergebnis:*
+
+- Qualität der Karten entspricht wieder Erwartungen
+- Tiefere Aussparung auf Ober- und Unterseite gut gelungen
+- Zusammen mit Test 1 und Test 2 haben wir nun viele verschiedene Formen und Grössen um Userfeedback einzuholen um das Kartendesign zu finalisieren
+

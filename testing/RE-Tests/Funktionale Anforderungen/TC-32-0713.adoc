@@ -1,0 +1,47 @@
+= Test Case F07.UC13
+
+|===
+|Doc-ID: |TC-32-0713
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+*F07.UC13 – Auflösung auf dem Bildschirm sehen*
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das Spiel ist gestartet und ein Kartenset mit gültigen Paaren ist vorhanden.
+- Die grafische Benutzeroberfläche funktioniert fehlerfrei.
+- Zu jedem Kartenpaar ist eine Auflösung (z.B. Bild + Infotext) definiert und korrekt verknüpft.
+- Die Anzeige erfolgt direkt nach einem erfolgreichen Match auf dem Bildschirm.
+
+== Testdaten
+- Anzahl Kartenpaare: 12
+- Karten mit erkennbaren QR-Codes
+- Ein korrektes Kartenpaar mit bekannter Auflösung (z.B. Gletscherbild und Text)
+
+== Auszuführende Schritte
+
+. Spiel wird gestartet und das Hauptmenü erscheint.
+. Spieler startet eine neue Runde.
+. Spieler deckt zwei passende Karten auf und bestätigt per Scan-Knopf.
+. Auflösung erscheint (Bild und Informationstext zum Karteninhalt).
+
+== Erwartetes Ergebnis
+- Nach Bestätigung eines passenden Kartenpaars wird die zugehörige Auflösung auf dem Bildschirm angezeigt.
+- Diese enthält mindestens ein Bild und/oder Informationstext.
+- Die Anzeige erfolgt innerhalb von 1 Sekunde.
+- Die Auflösung ist deutlich sichtbar und verständlich.
+
+== Erzieltes Ergebnis
+
+Kartenpaar wird in höherer Auflösung auf dem Bildschirm dargestellt.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

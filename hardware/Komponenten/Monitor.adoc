@@ -1,0 +1,41 @@
+= Monitor
+
+|===
+|Key specifications |details
+
+|Model
+|Verbatim PM-14
+
+|Monitor type
+|PC Monitor, Portable Monitor
+
+|Display size
+|14"
+
+|Display resolution
+|1920x1080
+
+|Screen technologie
+|LCD
+
+|Refresh rate
+|60 Hz
+
+|Video connections
+|HDMI (1x)
+
+|USB ports
+|USB-A, USB-C
+
+|Monitor equipment
+|Integrated loudspeakers, Integrated USB hub
+
+|Preis
+|CHF 79.- (Aktion)
+
+|weitere Dokumente
+|xref:../Documents/Produktdatenblatt PM-14.pdf[Technical data sheet]
+
+|Produktlink
+|https://www.digitec.ch/en/s1/product/verbatim-pm-14-1920-x-1080-pixels-14-monitor-24552684?tagIds=77-624[Link zu Produkt auf digitec.ch]
+|===

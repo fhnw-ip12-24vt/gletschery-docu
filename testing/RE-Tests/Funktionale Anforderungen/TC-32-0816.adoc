@@ -1,0 +1,44 @@
+= Test Case F08.UC16
+
+|===
+|Doc-ID: |TC-32-0816
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F08.UC16 – Spiel neu starten**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das vorherige Spiel wurde korrekt beendet
+- Der „Neustart“-Button ist gemäss Design vorhanden und funktionsfähig
+- Der Anwendungsspeicher (z.B. gesammelte Punkte, Kartenstatus) wird beim Neustart korrekt zurückgesetzt
+
+== Testdaten
+- Kartenset mit 12 Paaren
+- Zwei Spieler
+- Spracheinstellung: Deutsch
+
+== Auszuführende Schritte
+. Spieler beendet das aktuelle Spiel (z.B. nach dem letzten Kartenpaar)
+. Im Endbildschirm erscheint ein Button „Neues Spiel starten“ oder "Spiel beenden".
+. Spieler klickt auf den "Neues Spiel starten" Button
+. Die Anwendung lädt das Spiel neu, zeigt das Menü oder die Startanleitung
+. Der Spielstatus ist vollständig zurückgesetzt (0 Punkte)
+
+== Erwartetes Ergebnis
+- Der Neustart-Button reagiert korrekt
+- Das Spiel wird vollständig neu initialisiert
+- Alle vorherigen Daten sind gelöscht bzw. überschrieben
+- Spieler können direkt ein neues Spiel starten ohne Probleme
+
+== Erzieltes Ergebnis
+Bei Knopfdruck wechselt der Bildschirm zurück zu der ersten Feedbackmeldung. Das Spiel (Punktestand) wird korrekt zurückgesetzt.
+
+== Bemerkungen
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

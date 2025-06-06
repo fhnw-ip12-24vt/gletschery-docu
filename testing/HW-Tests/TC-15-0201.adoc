@@ -1,0 +1,47 @@
+= Test Case Funktionalität Kamera 1
+
+|===
+|Doc-ID: | TC-15-0201
+|Datum: | 28.11.2024
+|Test durchgeführt durch: | Maurice Meier
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass das Kameramodul funktioniert und QR-Codes erkennen kann.
+
+== Annahmen und Voraussetzungen
+- Auf dem PI ist eine Software vorhanden, mit welcher ein QR-Code ausgelesen werden kann.
+
+Alle Komponenten sind vorhanden:
+
+- [x] Pi
+- [x] Kameramodul
+- [x] Datenkabel
+- [x] Stromkabel
+
+== Testdaten
+
+- Beliebiger QR-Code dessen Inhalt bekannt ist.
+
+== Auszuführende Schritte
+
+. Vorhandenes Datenkabel am Kameramodul mit neu gekauftem ersetzen und mit Pi verbinden
+. Pi an Strom anschliessen und einschalten
+. Starten der benötigten Software zum Einlesen eines QR-Codes
+. Beliebigen QR-Code mit bekanntem Inhalt im Sichtfeld der Kamera platzieren
+
+== Erwartetes Ergebnis
+
+Der QR-Code wird als solcher erkannt und dessen Inhalt im Terminal ausgegeben.
+
+== Erzieltes Ergebnis
+
+Test fehlgeschlagen!
+
+Schlechte Lichtverhältnisse führen dazu, dass der QR-Code, besonders in den Ecken des Spielfeldes, nicht immer zuverlässig erkannt wird.
+
+== Bemerkungen
+
+Für die Fehlerbehebung und um die Kamera mit genügend Licht zu versorgen, werden im Inneren der Box LED-Streifen montiert. Beobachtung, ob das Problem dadurch gelöst werden kann.
+

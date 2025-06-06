@@ -1,0 +1,50 @@
+= Test Case Q01
+
+|===
+|Doc-ID: |TC-32-0100
+|Datum: | 18.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q01 - Leistungseffizienz:** Das System erkennt die Kartenpaar-QR-Codes in unter 1 Sekunde.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Buttoneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+- Die Lichtverhältnisse sind ausreichen und konstant.
+
+== Testdaten
+
+- 3D-gedruckte Memorykarten mit QR-Codes auf der Rückseite
+- Automatische Rückmeldung bei Durchführung Scan
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf START
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Spieler*in dreht zwei Karten um und drückt auf den Scan-Knopf.
+. Beobachtung, wann das System als erkannt und gelesen markiert.
+- Schritte 5 und 6 mehrmals wiederholen, um Konsistenz sicherzustellen.
+
+== Erwartetes Ergebnis
+
+Jeder QR-Code wird innerhalb von unter 1 Sekunde zuverlässig erkannt.
+
+== Erzieltes Ergebnis
+
+Alle getesteten QR-Codes wurden konsistent innerhalb von 0,8 bis 1,0 Sekunden erkannt.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Das System reagiert in Echtzeit und sorgt für eine flüssige Spielerfahrung.
+

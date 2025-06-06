@@ -1,0 +1,64 @@
+= Test Case F03.UC05
+
+|===
+|Doc-ID: |TC-32-0305
+|Datum: | 15.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F03.UC05 - Durch Hauptmenü navigieren**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Touch- oder Tasteneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+
+== Testdaten
+
+- Spieleranzahl: 1
+- Eingabesystem: Buttons
+- Spracheinstellungen: Deutsch, Französisch, Englisch
+- Verfügbare Optionen im Menü: START, Sprache, Spielanleitung, Diashow, Credits
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf *START*
+- Spiel wird gestartet, Bildschirm zeigt Anfang GameLoop
+. Spieler*in drückt auf *Sprache* und wählt eine Flagge
+- Systemtexte ändern sich auf gewählte Sprache
+. Spieler*in drückt auf *Spielanleitung*
+- Spielanleitung öffnet sich korrekt
+. Spieler*in drückt auf *Diashow*
+- Diashow wird abgespielt
+. Spieler*in drückt auf *Credits*
+- Credits-Screen öffnet sich korrekt
+
+Mit rotem Button kann jederzeit zurück ins Hauptmenü navigiert werden.
+
+== Erwartetes Ergebnis
+
+. Alle Menüoptionen sind sichtbar, korrekt beschriftet und reagieren wie vorgesehen.
+. Jeder Menüpunkt führt zum entsprechenden Untermenü oder zur Aktion.
+. Spracheinstellungen werden korrekt übernommen und sichtbar umgesetzt.
+. Eine Rückkehr ins Hauptmenü ist jederzeit möglich.
+
+== Erzieltes Ergebnis
+
+. Navigation funktionierte in allen Fällen reibungslos.
+. Menüpunkte wurden korrekt geladen und dargestellt.
+. Sprache konnte problemlos gewechselt werden.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen.
+Keine funktionalen Abweichungen festgestellt. Menütexte in allen Sprachen geprüft, keine Übersetzungsfehler festgestellt.
+

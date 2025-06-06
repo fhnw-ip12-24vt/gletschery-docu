@@ -1,0 +1,35 @@
+= Übergabeprotokoll Gletschery
+
+|===
+|Doc-ID: | TC-31-0100
+|Datum: | tbd
+|Übergabe durchgeführt durch: | Gletschery
+|===
+
+== Beschreibung
+
+Dieses Dokument soll sicherstellen, dass alle benötigten Dokumente vollständig übergeben werden.
+
+== Inhalt
+
+=== Administratives
+
+- [ ] Eine komplettes und unterschriebenes Übergabeprotokoll
+- [ ] Zugriff auf das Code-Repository
+- [ ] Zugriff auf das Docu-Repository
+
+=== Hardware
+
+- [ ] Die physische Box
+- [ ] Stromkabel
+- [ ] Memorykarten
+- [ ] Ersatzkarten
+- [ ] Ersatzhalterung PI-Kamera
+- [ ] Dokumentation mit Teilliste und Abmessungen
+
+=== Software
+
+- [ ] Dokumentation in Form des SAD
+- [ ] Deployment-Anleitung
+
+

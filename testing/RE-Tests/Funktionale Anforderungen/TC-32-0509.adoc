@@ -1,0 +1,45 @@
+= Test Case F05.UC09
+
+|===
+|Doc-ID: |TC-32-0509
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F05.UC09 – Spiel startet in Standardsprache**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Buttoneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+
+== Testdaten
+
+- Standardsprache: Deutsch
+
+== Auszuführende Schritte
+
+. Stromzufuhr unterbrechen - das Spiel wird beendet.
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Beobachtung, ob das UI korrekt und vollständig auf Deutsch eingestellt ist.
+
+== Erwartetes Ergebnis
+
+Die Benutzeroberfläche erscheint beim Start des Spiels automatisch in der Standardsprache Deutsch.
+
+== Erzieltes Ergebnis
+
+Die Benutzeroberfläche wurde beim Start in deutscher Sprache geladen.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.
+

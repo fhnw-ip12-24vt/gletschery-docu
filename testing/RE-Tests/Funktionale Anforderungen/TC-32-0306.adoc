@@ -1,0 +1,55 @@
+= Test Case F03.UC06
+
+|===
+|Doc-ID: |TC-32-0306
+|Datum: | 15.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F03.UC06 - Aktuell ausgewähltes Menüelement erkennen**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Buttoneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+
+== Testdaten
+
+- Spieleranzahl: 1
+- Eingabesystem: Buttons
+- Spracheinstellungen: Deutsch, Französisch, Englisch
+- Verfügbare Optionen im Menü: START, Sprache, Spielanleitung, Diashow, Credits
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Gletschery-Indikator befindet sich standardmässig auf START.
+. Spieler*in navigiert mit dem weissen Button durch das Menü.
+. Beobachtung, ob sich der Gletschery-Indikator mit der Auswahl mitbewegt.
+. Spieler*in drückt auf beliebigen Menüpunkt und kehrt zurück ins Hauptmenü.
+. Beobachtung, ob der Gletschery-Indikator auf der letzten Auswahl stehen bleibt oder auf START zurückgesetzt wird.
+
+== Erwartetes Ergebnis
+
+. Die aktuell ausgewählte Menüoption wird eindeutig durch den Gletschery-Indikator markiert.
+. Beim Navigieren ändert sich die Position des Symbols synchron mit der Auswahl.
+. Auch nach dem Öffnen und Schliessen eines Untermenüs ist die Markierung korrekt sichtbar.
+
+== Erzieltes Ergebnis
+
+. Der Gletschery-Indikator bewegte sich wie erwartet durch die Menüpunkte.
+. Die aktive Auswahl war zu jedem Zeitpunkt klar erkennbar.
+. Rückkehr ins Hauptmenü führte zur automatischen Markierung der ersten Option.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.
+

@@ -1,0 +1,60 @@
+= Test Case F01.UC02
+
+|===
+|Doc-ID: |TC-32-0102
+|Datum: | 14.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F01.UC02 - Fehlermeldungen sehen**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die Bildschirmausgabe ist implementiert und funktionstüchtig.
+- Das Spiel ist korrekt mit Strom versorgt.
+- Die Benutzeroberfläche ist vollständig geladen.
+
+== Testdaten
+
+- Spieleranzahl: 2
+- Spielmodus: Multiplayer
+- Eingabesystem: Buttons
+- Spracheinstellung: Deutsch, Französisch, Englisch
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf START
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Spieler*in dreht *keine Karten* um und drückt auf den Scan-Knopf
+- Bildschirm zeigt Hinweis: *Keine Karten erkannt*
+. Spieler*in dreht *eine Karte* um und drückt auf den Scan-Knopf
+- Bildschirm zeigt Hinweis: *Zu wenig Karten umgedreht*
+. Spieler*in dreht *drei Karten* um und drückt auf den Scan-Knopf
+- Bildschirm zeigt Hinweis: *Zu viele Karten umgedreht*
+. Spieler*in dreht *bereits gefundene Karten* um und drückt auf den Scan-Knopf
+- Bildschirm zeigt Hinweis: *Karten bereits gefunden*
+
+
+== Erwartetes Ergebnis
+
+. Das Startmenü wird angezeigt.
+. Bei Spielstart erscheint die Spieleinführung und der erste Hinweis.
+. Jede Aktion löst eine sichtbare Rückmeldung aus.
+. Das System reagiert in allen getesteten Fällen mit der jeweils passenden Fehlermeldung.
+
+== Erzieltes Ergebnis
+
+. Alle Informationen wurden wie erwartet angezeigt.
+. Die Bildschirmreaktionen stimmen mit den Benutzeraktionen überein.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

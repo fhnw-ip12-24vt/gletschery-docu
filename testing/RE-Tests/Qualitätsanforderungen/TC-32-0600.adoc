@@ -1,0 +1,52 @@
+= Test Case Q06
+
+|===
+|Doc-ID: |TC-33-0600
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q06 - Benutzerfreundlichkeit: **Die Menüstruktur ist in allen Sprachen konsistent und übersichtlich.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Die Sprachumschaltung ist implementiert und funktionsfähig.
+- Alle Texte sind in den drei Sprachen hinterlegt.
+- Die Menüstruktur basiert in allen Sprachen auf derselben Struktur.
+
+== Testdaten
+
+- Spracheinstellung: Deutsch
+- Spracheinstellung: Englisch
+- Spracheinstellung: Französisch
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm. Sprache ist auf Deutsch eingestellt.
+. Beobachtung, wo und wie die grafischen Elemente auf dem Bildschirm platziert sind.
+. Spieler*in navigiert in das Menü *Sprache* und wählt die französische Flagge aus.
+. Beobachtung, ob die grafischen Elemente an der gleichen Stelle positioniert bleiben.
+. Spieler*in navigiert in das Menü *Sprache* und wählt die britische Flagge aus.
+. Beobachtung, ob die grafischen Elemente an der gleichen Stelle positioniert bleiben.
+
+== Erwartetes Ergebnis
+
+. Die Menüstruktur bleibt in allen drei Sprachen gleich aufgebaut.
+. Alle Menüpunkte befinden sich an derselben Stelle.
+
+== Erzieltes Ergebnis
+
+. Die Menüstruktur wurde in allen getesteten Sprachen als konsistent und logisch empfunden.
+. Alle Navigationspunkte waren gleich angeordnet.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Die Benutzerfreundlichkeit im Hinblick auf die Menüführung ist in allen Sprachen gewährleistet.

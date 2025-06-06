@@ -1,0 +1,64 @@
+= Übersicht Funktionalität Kamera
+
+|===
+|Doc-ID: | TC-15-0200
+|Test durchgeführt durch: | Maurice Meier
+|===
+
+== Beschreibung
+
+Diese Übersicht fasst alle Test Cases zusammen, welche sicherstellen, dass das Kameramodul funktioniert und QR-Codes erkennen kann.
+
+== Annahmen und Voraussetzungen
+
+Alle Komponenten sind vorhanden:
+
+- [x] Pi
+- [x] Kameramodul
+- [x] Datenkabel
+- [x] Stromkabel
+
+- Auf dem PI ist eine Software vorhanden, mit welcher ein QR-Code ausgelesen werden kann.
+
+== Testdaten
+
+- Kartenraster für ideale Ausrichtung auf der Plexiglasplatte.
+- Beliebiger QR-Code dessen Inhalt bekannt ist.
+
+== Auszuführende Schritte
+
+- [x] Geeigneten Rahmen auswählen (Karton, Holz, Plastik)
+- [x] Kameramodul und Pi platzieren und befestigen
+- [x] Elektronische Komponenten verbinden
+- [x]  Rahmen auf Spielfläche (Plexiglas) fixieren
+- [x] Monitor anschliessen
+
+=== Testablauf
+
+. Starten der benötigten Software zum Einlesen eines QR-Codes
+. Beliebigen QR-Code mit bekanntem Inhalt im Sichtfeld der Kamera platzieren
+. Bei erfolgreichem Test, Wiederholung des Scanvorgangs an Rändern des Kamerasichtfeldes zur Überprüfung, ob der ganze Kamerabereich verwendet werden kann.
+
+== Erwartetes Ergebnis
+
+Der QR-Code wird als solcher erkannt und dessen Inhalt im Terminal ausgegeben.
+
+== Erzieltes Ergebnis
+
+|===
+| Datum | Ergebnis | Bemerkung
+
+| 28.11.2024 | Fehlgeschlagen | xref:../HW-Tests/TC-15-0201.adoc[TC-15-0201:] Probleme Erkennung in den Ecken des Spielfeldes
+| 29.11.2024 | Fehlgeschlagen | xref:../HW-Tests/TC-15-0202.adoc[TC-15-0202:] Probleme Erkennung in den Ecken des Spielfeldes
+| 11.12.2024 | Fehlgeschlagen | xref:../HW-Tests/TC-15-0203.adoc[TC-15-0203:] Probleme Autofokus
+| 19.01.2025 | Fehlgeschlagen | xref:../HW-Tests/TC-15-0204.adoc[TC-15-0204:] Probleme mit der Ausrichtung der QR-Codes
+| 30.04.2025 | Bestanden | -
+| 06.05.2025 | Bestanden | -
+| 21.05.2025 | Bestanden | -
+
+|===
+
+== Bemerkungen
+
+Die Funktionalität der Kamera wurde im Verlauf des Projektes wiederholt getestet. Anfängliche Probleme konnten behoben werden und es wurden keine weiteren funktionalen Abweichungen festgestellt.
+

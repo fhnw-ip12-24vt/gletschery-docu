@@ -1,0 +1,43 @@
+= Test Case F09.UC17
+
+|===
+|Doc-ID: |TC-32-0917
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F09.UC17 – Karten scannen**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das Spiel ist korrekt gestartet und befindet sich im aktiven Spielmodus
+- Dem Spieler ist bekannt, welcher Button der Scan-Button ist durch die Beschriftung.
+- Die Kamera des Systems funktioniert fehlerfrei
+- Die Karten sind mit gültigen und lesbaren QR-Codes versehen
+
+== Testdaten
+- Zwei Karten mit gültigen QR-Codes
+- Kartendaten sind im JSON-Format zur Validierung vorhanden
+
+== Auszuführende Schritte
+. Spieler deckt zwei Karten auf.
+. Spieler drückt auf den „Scannen“-Button
+. QR-Codes werden erkannt und geprüft
+. Nach dem Scannen wird angezeigt, welche Karten gescannt wurden.
+
+== Erwartetes Ergebnis
+- Der Scanvorgang startet beim Klick auf den Scan-Button (grüner Button)
+- Die Kamera erkennt beide QR-Codes korrekt
+- Die gescannten Daten werden vom Spiel verarbeitet
+- Die gescannten Karten werden visuell auf dem Bildschirm dargestellt inklusive Anzeige, ob die Karten zueinander passt.
+
+== Erzieltes Ergebnis
+Scanvorgang wird korrekt gestartet.
+
+== Bemerkungen
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

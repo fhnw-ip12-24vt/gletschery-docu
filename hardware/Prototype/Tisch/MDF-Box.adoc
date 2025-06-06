@@ -1,0 +1,34 @@
+= MDF-Box
+
+*Datum:* Mi, 11.12.2024
+
+*Testziel:*
+
+- [x] Prototype-Box welche Tischplatte sowie alle Hardware-Komponenten aufnehmen kann.
+
+'''
+
+*Testdetails:*
+
+Konstruktion Details
+
+- Grösse der Box errechnet aus Grösse der Tischplatte und Winkel der PI-Kamera.
+- Die Box besteht im Wesentlichen aus 4 Wandplatten und einer Bodenplatte, welche alle aus einer MDF-Platte der Dicke 12mm gefertigt wurden
+- Masse der Bodenplatte: 514x364
+- Masse Vorder- und Rückseite: 514x300
+- Masse Seitenteile: 340x300
+
+
+
+Fertigung Details
+
+- Zuschneiden aller Platten auf die Aussen-Masse mittels Tauchkreissäge
+- Fräsen Nut (Breite 5mm, Tiefe 6mm) in Seitenteile mittels Oberfräse
+- Vorbohren Schraubenlöcher und Senkungen auf Aussenseite
+
+'''
+
+*Ergebnis:*
+
+- Ergebnis entspricht den Erwartungen
+- Verbesserungspotential: bisher kann die Box nur durch Schrauben geöffnet und geschlossen werden, zumindest auf einer Seite wäre ein schnellerer Zugang ohne Werkzeug wünschenswert.

@@ -1,0 +1,55 @@
+= Test Case Q05
+
+|===
+|Doc-ID: |TC-32-0500
+|Datum: | 18.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q05 - Benutzerfreundlichkeit: **Das Spiel ist in mehreren Sprachen verfügbar und kann vor dem Start des Spiels ausgewählt werden.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Die Sprachumschaltung ist implementiert und funktionsfähig.
+
+== Testdaten
+
+- Spracheinstellung: Deutsch
+- Spracheinstellung: Englisch
+- Spracheinstellung: Französisch
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm. Sprache ist standardmässig auf Deutsch eingestellt.
+. Spieler*in drückt auf *START*
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Beobachtung, ob die Spieleinführung und die Spielanweisung auf Deutsch sind.
+. Spieler*in beendet das Spiel vorzeitig, navigiert in das Menü *Sprache* und wählt die französische Flagge aus.
+. Spieler*in drückt auf *START*
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Beobachtung, ob die Spieleinführung und die Spielanweisung auf Französisch sind.
+. Spieler*in beendet das Spiel vorzeitig, navigiert in das Menü *Sprache* und wählt die britische Flagge aus.
+. Spieler*in drückt auf *START*
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Beobachtung, ob die Spieleinführung und die Spielanweisung auf Englisch sind.
+
+== Erwartetes Ergebnis
+
+Die ausgewählte Sprache wird korrekt übernommen und sämtliche Inhalte auf dem Homescreen sowie in der Benutzeroberfläche erscheinen vollständig in der gewählten Sprache.
+
+== Erzieltes Ergebnis
+
+Die Benutzeroberfläche wurde jeweils korrekt und vollständig übersetzt angezeigt.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen.
+

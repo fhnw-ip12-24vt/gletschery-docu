@@ -1,0 +1,41 @@
+= Kamera
+
+|===
+|Key specifications |details
+
+|Model
+|Camera Module 3 Wide
+
+|Sensor
+|Sony IMX708
+
+|Resolution
+|11.9 megapixels
+
+|Horizontal/vertical
+|4608 × 2592 pixels
+
+|Output
+|RAW10
+
+|Autofocus system
+|Phase Detection Autofocus
+
+|Cable connector
+|15 × 1mm FPC
+
+|Compliance
+|FCC 47 CFR Part 15, Subpart B, Class B Digital Device
+Electromagnetic Compatibility Directive (EMC) 2014/30/EU
+Restriction of Hazardous Substances (RoHS) Directive
+2011/65/EU
+
+|Preis
+|CHF 45.70
+
+|weitere Dokumente
+|xref:../Documents/camera-module-3-product-brief.pdf[Pi cameras product brief]
+
+|Produktlink
+|https://www.digitec.ch/en/s1/product/raspberry-pi-camera-module-3-wide-angle-120-development-board-accessories-24041966[Link zu Produkt auf digitec.ch]
+|===

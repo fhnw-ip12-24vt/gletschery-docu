@@ -1,0 +1,38 @@
+= Memory-Karten Test 4
+
+*Datum:* Fr, 29.11.2024
+
+*Testziel:*
+
+- [x] Verschiedene Dicken und Formen für engere Auswahl UX-Tests
+- [x] Analyse & Verbesserungspotenzial der Druckqualität
+
+'''
+
+*Testdetails:*
+
+Konstruktion Details
+
+- Grösse: 60x60
+- Eckform: Fasen und verschiedene Radien
+- je zwei verschiedene Dicken in 6mm und 5mm
+- alle Karten haben oben und unten eine Vertiefung von 1 um Bild/QR-Code zu platzieren
+- alle scharfen Aussenkanten haben eine Fase von 0.5
+- Files: xref:3D_Files/memory-cards-v4 60x60x5_F5.stl[memory-cards-v4 60x60x5_F5.stl] ; xref:3D_Files/memory-cards-v4 60x60x5_R5.stl[memory-cards-v4 60x60x5_R5.stl] ; xref:3D_Files/memory-cards-v4 60x60x5_R6.stl[memory-cards-v4 60x60x5_R6.stl] ; xref:3D_Files/memory-cards-v4 60x60x5_R7.stl[memory-cards-v4 60x60x5_R7.stl] ; xref:3D_Files/memory-cards-v4 60x60x6_F5.stl[memory-cards-v4 60x60x6_F5.stl] ; xref:3D_Files/memory-cards-v4 60x60x6_R5.stl[memory-cards-v4 60x60x6_R5.stl] ; xref:3D_Files/memory-cards-v4 60x60x6_R6.stl[memory-cards-v4 60x60x6_R6.stl] ; xref:3D_Files/memory-cards-v4 60x60x6_R7.stl[memory-cards-v4 60x60x6_R7.stl]
+
+3D-Druck Details
+
+- Anzahl Karten: 8
+- Grössen: 60x60x6 und 60x60x5
+- Druckeinstellungen: Voreinstellungen modifiziert: PLA; 0.4 Nozzle; 0.2 Speed; glattePlatte; Perimeter: 10mm; Deckenfüllmuster: Ausgerichtet Geradlinig; Randbreite: 3mm; Infill: 15%, Füllmuster: Gitternetz; generiere Stützmaterial + Stützen automatische generieren;
+
+
+'''
+
+*Ergebnis:*
+
+- Oberfläche Rand mit neuer Strategie (Perimeter 10mm) nicht so glatt wie mit alter Strategie, dafür gleichmässiger. An einigen Ecken sind Bahnen etwas auseinandergezogen.
+- Tiefere Aussparung auf Ober- und Unterseite gut gelungen
+- Zusammen mit Test 1, 2 und 3 haben wir nun viele verschiedene Formen und Grössen um Userfeedback einzuholen um das Kartendesign zu finalisieren
+- Wir haben nun genug gedruckte Karten um ein Testspiel mit halbem Umfang zu machen (12 Memory Karten, 6 Paare)
+

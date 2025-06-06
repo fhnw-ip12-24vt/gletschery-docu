@@ -1,0 +1,43 @@
+= Test Case Funktionalität Gehäuse
+
+|===
+|Doc-ID: | TC-17-0300
+|Datum: | 21.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass beim Einstecken des Stromkabels die grundlegende Systeminitialisierung funktioniert. Konkret wird geprüft, ob die LED leuchten, der Raspberry Pi hochfährt und die Buttons mit Strom versorgt werden.
+
+== Annahmen und Voraussetzungen
+
+- Stromzufuhr ist korrekt angeschlossen
+- LED, Buttons und Raspberry Pi sind korrekt verdrahtet
+- Software zur Systeminitialisierung ist auf dem Pi installiert
+- Gehäuse ist vollständig montiert
+
+== Testdaten
+
+-
+
+== Auszuführende Schritte
+
+. Stromkabel an die Box anschliessen
+. Beobachten, ob die LED-Streifen zu leuchten beginnen
+. Prüfen, ob der Raspberry Pi hochfährt (über angeschlossenen Monitor)
+. Beobachten, ob die Buttons Strom erhalten und leuchten
+
+== Erwartetes Ergebnis
+
+- Die LED beginnt zu leuchten
+- Der Raspberry Pi startet korrekt
+- Die Buttons erhalten Strom und zeigen dies durch Beleuchtung an
+
+== Erzieltes Ergebnis
+
+Hardwarekomponenten reagieren wie erwartet. System wird korrekt gestartet.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

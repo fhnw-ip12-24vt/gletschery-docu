@@ -1,0 +1,24 @@
+= Tischplatte
+
+*Datum:* Do, 12.12.2024
+
+*Testziel:*
+
+- [x] Erfahrungswerte für die Materialwahl (Plexiglas/Glas) sammeln
+
+'''
+
+*Testdetails:*
+
+Die Grösse der Tischplatte wurde so festgelegt, dass ein Memory-Kartenset mit 24 Karten ausreichend Platz darauf hat. Daraus ergibt sich eine Masse von 50 x 34 cm.
+
+Im Fachhandel wurde eine Glasplatte in der Grösse 50 x 35 cm gefunden. Da das Zuschneiden des Glases aufwendig ist, wird diese Masse für die Tischplatte verwendet.
+
+Zwei verschiedene Platten gekauft:
+
+- Glasplatte: 500x350x2 Millimeter
+- Plexiglasplatte: 500x500x4 Millimeter und auf Grösse 500x350 zuschneiden lassen
+
+== Ergebnis
+
+Die Funktionalität des Spiels ist mit beiden Platten gegeben. Aufgrund von Kundenfeedback und eigenen Sicherheitsbedenken wird jedoch in der weiteren Entwicklung des Produktes die Plexiglasplatte verwendet.

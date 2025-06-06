@@ -1,0 +1,20 @@
+= Kamera-Kabel
+
+|===
+|Key specifications |details
+
+|Model
+|RASP CAM FPC 50
+
+|connectors
+|1x CSI - 1x CSI
+
+|Length
+|50mm
+
+|Preis
+|CHF 8.70
+
+|Produktlink
+|https://www.digitec.ch/en/s1/product/raspberry-pi-rasp-cam-fpc-50-raspberry-pi-camera-cable-1x-csi-1x-csi-050-m-development-board-accesso-40089192[Link zu Produkt auf digitec.ch]
+|===

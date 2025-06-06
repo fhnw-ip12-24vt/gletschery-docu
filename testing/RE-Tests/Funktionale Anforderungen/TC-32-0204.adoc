@@ -1,0 +1,57 @@
+= Test Case F02.UC04
+
+|===
+|Doc-ID: |TC-32-0204
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F02.UC04 - Kartenstatus speichern**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Buttoneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+- Kartenset besteht aus einer geraden Anzahl an Karten.
+- Mindestens ein korrektes Kartenpaar ist noch nicht gefunden.
+
+== Testdaten
+
+- Spieleranzahl: 2
+- Spielmodus: Multiplayer
+- 3D-gedruckte Memorykarten mit QR-Codes auf der Rückseite
+- Spielkarten: 12 Kartenpaare
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf START
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Spieler*in dreht zwei zusammengehörende Karten um und drückt auf den Scan-Knopf.
+- Bildschirm zeigt Gletscherbilder mit grünem Rand, einen Fakt und angepassten Punktestand.
+. Spieler*in dreht gleiches Kartenpaar erneut um und drückt auf den Scan-Knopf.
+- Bildschirm zeigt Hinweis: *Karten bereits gefunden*
+
+== Erwartetes Ergebnis
+
+. Das korrekte Kartenpaar wird beim ersten Mal erkannt und intern als gefunden markiert.
+. Bei erneutem Scannen wird die passende Fehlermeldung ausgegeben.
+
+== Erzieltes Ergebnis
+
+. Alle Informationen wurden wie erwartet angezeigt.
+. Die Bildschirmreaktionen stimmen mit den Benutzeraktionen überein.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.
+
+

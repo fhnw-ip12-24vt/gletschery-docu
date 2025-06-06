@@ -1,0 +1,49 @@
+= Test Case F06.UC11
+
+|===
+|Doc-ID: |TC-32-0611
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+*F06.UC11 – Aktiven Spieler sehen*
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das Spiel läuft.
+- Die Benutzeroberfläche ist funktionsfähig.
+- Der Spielstand(Punktestand) wird korrekt aktualisiert.
+
+== Testdaten
+- Spieleranzahl: 2
+- Kartenpaare: 12
+
+== Auszuführende Schritte
+
+. Spiel starten
+. Spieler A beginnt und dreht zwei Karten um.
+. Das System zeigt das Ergebnis (Bilder und Rahmen) an.
+. Nach Abschluss des Zugs wird Spieler B als aktiver Spieler angezeigt.
+. Spieler B führt ebenfalls einen Zug aus.
+. Nach Abschluss des Zugs wird wieder Spieler A als aktiv angezeigt.
+
+== Erwartetes Ergebnis
+- Während jeder Spielrunde wird der aktuelle Spieler klar ersichtlich auf dem Bildschirm hervorgehoben (z.B. durch Namen, Farbe, Icon oder Text).
+
+- Die Anzeige wechselt automatisch nach jedem Zug zum nächsten Spieler.
+
+- Es ist zu jeder Zeit eindeutig, welcher Spieler an der Reihe ist.
+
+== Erzieltes Ergebnis
+- Der aktive Spieler wurde visuell eindeutig angezeigt.
+- Der Wechsel zwischen den Spielern erfolgte korrekt nach jedem Zug.
+- Spieler konnten jederzeit erkennen, wer am Zug ist.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Funktion wie erwartet implementiert.

@@ -1,0 +1,32 @@
+= Memory-Karten Test 1
+
+*Datum:* Mo, 25.11.2024
+
+*Testziel:*
+
+- [x] Kenntnisse 3D Konstruktion erarbeiten
+- [x] Kenntnisse 3D-Druck erarbeiten
+
+'''
+
+*Testdetails:*
+
+Konstruktion Details
+
+- Konstruktion eines 3D Karten Prototypen mit graviertem Text in blender
+- export von stl Files
+- Files: xref:3D_Files/memory-cards-v1.stl[memory-cards-v1.stl]
+
+3D-Druck Details
+
+- Anzahl Karten: 2
+- Grössen: 60x60x5 mit Fase
+- Druckeinstellungen: Voreinstellungen; PLA; 0.6 Nozzle; 0.2 Speed; glattePlatte
+
+'''
+
+*Ergebnis:*
+
+- Erster Anfassbarer Prototyp; Qualität gut; Schriftzug würde Anpassungen benötigen
+- grundsätzlich zufrieden mit Kartengrösse
+- nächste Tests neues Design mit Aussparungen oben und unten und verschiedenen Formen und Grössen

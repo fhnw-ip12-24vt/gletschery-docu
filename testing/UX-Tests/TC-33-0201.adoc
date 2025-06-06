@@ -1,0 +1,50 @@
+= Test Case Spielspass & Bewusstseinsvermittlung
+
+|===
+|Doc-ID: |TC-33-0201
+|Datum: | 09.04.2025
+|Test durchgeführt durch: | Nora, Patrick, Aswin, Dominik
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- Das Spiel soll Spass machen, motivierend sein und die Spieler emotional ansprechen
+- Das Spiel schafft Bewusstsein für die Auswirkungen der Gletscherschmelze durch interaktive Elemente und altersgerechte Information.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- QR-Code Erkennung und Bildschirmausgabe sind implementiert
+- Hardwarekomponente (Knopf) für Einreichung Spielzug ist eingebaut
+- Memorykarten sind mit Bildern versehen
+
+== Testdaten
+
+- Testpersonen (Alter: 9 bis 12 Jahre)
+
+
+== Auszuführende Schritte
+
+. Einführung in Usability Test durch UX und Aufbau Prototyp/Testumgebung
+. Erklärung Projektstand und Ablauf Testing
+. **Spieler*innen spielen das Spiel**
+. **Beobachtung und Feedback einholen durch Team**
+. Fragen klären & nochmals mündlich Feedback einholen
+. Abbau Prototyp/Testumgebung
+
+
+== Erwartetes Ergebnis
+
+Das Spiel macht Testpersonen Freude und sie lernen mehr über die Schweizer Gletscher.
+
+== Erzieltes Ergebnis
+
+Test bestanden!
+
+== Bemerkungen
+
+Es macht den Kindern Spass das Spiel zu spielen und jedes von ihnen hat etwas Neues über einen Gletscher oder sogar einen neuen Gletscher (kennen-)gelernt.
+

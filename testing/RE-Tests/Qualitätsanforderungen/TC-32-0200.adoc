@@ -1,0 +1,19 @@
+= Test Case Q02
+
+|===
+|Doc-ID: |TC-32-0200
+|Datum: | 28.03.2025 und 09.04.2025
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q02 - Benutzerfreundlichkeit: **Das Spiel benötigt keine separate Anleitung und erklärt sich durch das Design und die Interaktion von selbst.
+
+erfüllt werden kann.
+
+== Bemerkung
+
+Wird als Teil des Usability Testings in xref:../../UX-Tests/TC-33-0100.adoc[TC-33-0100] und xref:../../UX-Tests/TC-33-0101.adoc[TC-33-0101] abgehandelt.
+

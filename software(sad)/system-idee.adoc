@@ -1,0 +1,27 @@
+= Systemidee
+
+== Kernaufgabe des Systems
+Das System ermöglicht ein interaktives Memory-Spiel, das „Vorher“- und „Nachher“-Bilder schmelzender Gletscher als Kartenpaare verbindet. Die Karten sind mit QR-Codes versehen, welche von einer Kamera gescannt und automatisch erkannt werden. Durch das Drücken von Buttons kann der Spielverlauf gesteuert werden. Das System zählt automatisch die Punkte und signalisiert erkannte Paare.
+
+== Kategorie von System
+Eingebettetes System: Das Programm wird für spezielle Hardware geschrieben, inklusive einer Raspberry Pi Kamera sowie diversen Eingabe-Elementen.
+
+== Wesentliche Qualitätsanforderungen
+- Leistungseffizienz: Das System erkennt die Kartenpaar-QR-Codes in unter 1 Sekunde.
+- Benutzerfreundlichkeit: Das Spiel benötigt keine separate Anleitung und erklärt sich durch das Design und die Interaktion von selbst.
+- Benutzerfreundlichkeit: Der Inhalt ist für die Zielgruppe angemessen und verständlich formuliert.
+- Benutzerfreundlichkeit: Interaktive Elemente sind durch Symbole zusätzlich gekennzeichnet, sodass das Spiel auch für Personen mit Farbsehschwäche spielbar ist.
+- Benutzerfreundlichkeit: Das Spiel ist in mehreren Sprachen verfügbar und kann vor dem Start des Spiels ausgewählt werden.
+- Benutzerfreundlichkeit: Die Menüstruktur ist in allen Sprachen konsistent und übersichtlich.
+- Benutzerfreundlichkeit: Alle Inhalte sind in den Sprachen Deutsch, Englisch und Französisch verfügbar.
+- Wartbarkeit: Die Spielinhalte (Texte und Bilder) sind in einer externen JSON-Datei abgelegt und können ohne Änderung des Quellcodes angepasst werden.
+
+== Relevante Stakeholder
+- Der Kunde (Primeo Energie Kosmos) möchte ein wartbares und robustes System, welches sie über eine lange Zeit einfach und kostengünstig im Einsatz haben können. Zudem möchte er Besuchern eine gute Erfahrung bieten und etwas beibringen.
+- Der Product Owner (Andreas Vogt) möchte die Interessen und Bedürfnisse des Kunden sowie der Benutzer vertreten und dafür sorgen, dass das Produkt den Erwartungen entspricht.
+- Software- und Hardwareentwickler wollen eine benutzerfreundliche und robuste Lösung liefern.
+- Die Anwender möchten ein attraktives und robustes System. Es soll einfach zu bedienen sein und sie einige Minuten unterhalten können.
+- Die FHNW möchte ein erfolgreich abgeschlossenes Projekt sehen. Ebenfalls möchte sie, dass alle Stakeholder zufrieden mit dem entstandenen Produkt sind.
+
+== Schnittstellen zu externen Systemen
+Es sind keine Schnittstellen zu anderen Systemen oder Programmen notwendig, um die gestellten Anforderungen zu erfüllen.

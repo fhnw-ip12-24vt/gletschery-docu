@@ -1,0 +1,74 @@
+= Dokumentation Spiel-Komponenten
+
+*Inhalt Spiel-Komponenten*
+
+- [x] 1.1 Tisch
+- [x] 2.1 Memory-Karten
+
+'''
+== 1.1 Tisch
+
+Prototyp Komponenten:
+
+|===
+|Komponenten |Beschreibung
+
+|xref:Tisch/MDF-Box.adoc[MDF-Box]
+
+11.12.2024
+
+|Prototype-Box welche Tischplatte sowie alle Hardware-Komponenten aufnehmen kann.
+
+|xref:Tisch/Tischplatte.adoc[Tischplatte]
+
+12.12.2024
+
+|Durchsichtiges Spielfeld aus Glas oder Plexiglas.
+
+|xref:Tisch/PiCam-Halterung.adoc[PI-CamHolder-v1]
+
+17.12.2024
+
+|Element, welches auf dem "Boden" der Prototyp-Box befestigt wird, um die PI-Kamera zu positionieren und befestigen.
+
+|Steckerleiste
+|Dient dem Stromanschluss von Pi, Monitor und LEDs
+
+|LED-Band
+|Dient der Beleuchtung des Innenraums der Box
+
+|===
+
+
+== 2.1 Memory-Karten
+
+Tests/Prototypes:
+
+|===
+|Testlauf |Abklärung
+
+|xref:MemoryCards/Memory-Cards-v1.adoc[Memory-Karten Test 1]
+
+25.11.2024
+
+|Abklärungen 3D-Konstruktion und 3D-Druck
+
+|xref:MemoryCards/Memory-Cards-v2.adoc[Memory-Karten Test 2]
+
+26.11.2024
+
+|Ausprobieren verschiedener Formen und Grössen für UX-Testing
+
+|xref:MemoryCards/Memory-Cards-v3.adoc[Memory-Karten Test 3]
+
+27.11.2024
+
+|Analyse & Verbesserung der Druckqualität und verschiedene Kartendicken für UX-Testing
+
+|xref:MemoryCards/Memory-Cards-v4.adoc[Memory-Karten Test 4]
+
+29.11.2024
+
+|Verschiedene Formen in gleicher Druckqualität zur besseren Vergleichbarkeit. Genug in der Anzahl um für Prototype im Spiel zu verwenden.
+
+|===

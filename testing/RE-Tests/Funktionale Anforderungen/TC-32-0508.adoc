@@ -1,0 +1,51 @@
+= Test Case F05.UC08
+
+|===
+|Doc-ID: |TC-32-0508
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F05.UC08 – Sprache ändern**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Buttoneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+- Alle UI-Texte sind in der Standardsprache (Deutsch) sichtbar.
+
+== Testdaten
+
+- Verfügbare Sprachen: Deutsch, Französisch, Englisch
+- Ausgangssprache: Deutsch
+- Zielsprachen für den Test: Französisch, Englisch
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in navigiert in das Menü *Sprache* und wählt die französische Flagge aus.
+. Beobachtung, ob das UI korrekt und vollständig auf Französisch umstellt.
+. Spieler*in wählt die britische Flagge aus.
+. Beobachtung, ob das UI korrekt und vollständig auf Englisch umstellt.
+
+== Erwartetes Ergebnis
+
+. Nach Auswahl von Französisch wird die Benutzeroberfläche vollständig auf Französisch dargestellt.
+. Nach Auswahl von Englisch wird die Benutzeroberfläche vollständig auf Englisch dargestellt.
+
+== Erzieltes Ergebnis
+
+Die Benutzeroberfläche wechselt nach jeder Auswahl korrekt in die gewählte Sprache (Französisch, Englisch, Deutsch).
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.
+

@@ -1,0 +1,125 @@
+....
+{
+"players": [
+{
+"name": {
+"de": "...",   // Spielername auf Deutsch
+"en": "...",   // Spielername auf Englisch
+"fr": "..."    // Spielername auf Französisch
+},
+"icon": "..."     // Pfad zum Spieler-Icon (PNG, lokal)
+}
+],
+
+  "cardPairs": [
+    {
+      "pairId": "...",   // Eindeutige ID für das Kartenpaar
+      "name": "...",     // Name oder Beschreibung des Ortes/Gletschers
+      "fact": {
+        "de": "...",     // Wissensfakt auf Deutsch
+        "en": "...",     // Wissensfakt auf Englisch
+        "fr": "..."      // Wissensfakt auf Französisch
+      },
+      "cards": [
+        {
+          "id": "...",     // Karten-ID (z. B. "01A")
+          "image": "...",  // Pfad zum Bild (PNG, lokal)
+          "date": "..."    // Jahr der Aufnahme (z. B. "1980")
+        },
+        {
+          "id": "...",
+          "image": "...",
+          "date": "..."
+        }
+      ]
+    }
+  ],
+
+  "settings": {
+    "languages": ["de", "fr", "en"],        // Unterstützte Sprachen
+    "defaultLanguage": "de",                // Standard-Sprache
+    "backgroundImage": "...",               // Pfad zum Hintergrundbild
+    "instructionImage": "...",              // Pfad zur Anleitungsgrafik
+    "introductionImage": "...",             // Pfad zum Startbild
+    "logoImage": "...",                     // Pfad zum Logo
+
+    "credits": {
+      "qrCodeGlacierChange": "...",         // Pfad zu QR-Code-Bild
+      "qrCodeSwissEduc": "...",
+      "qrCodeEPics": "...",
+      "de": {
+        "title": "...",                     // Titel der Credits (Deutsch)
+        "text": "...",                      // Textabschnitt
+        "ePics": "...",                     // URL
+        "swissEduc": "...",
+        "glacierChange": "..."
+      },
+      "en": {
+        "title": "...",
+        "text": "...",
+        "ePics": "...",
+        "swissEduc": "...",
+        "glacierChange": "..."
+      },
+      "fr": {
+        "title": "...",
+        "text": "...",
+        "ePics": "...",
+        "swissEduc": "...",
+        "glacierChange": "..."
+      }
+    }
+  },
+
+  "ui": {
+    "checkMarkIcon": "...",          // Icon für "richtig"
+    "nextPageIcon": "...",           // Icon für Seitenwechsel
+    "cancelIcon": "...",             // Icon für "Abbrechen"
+    "pointerIcon": "...",            // Icon für Auswahlzeiger
+    "pointerUpIcon": "...",          // Icon für aktiven Zeiger
+    "germanFlagIcon": "...",         // Flagge Deutsch
+    "frenchFlagIcon": "...",         // Flagge Französisch
+    "englishFlagIcon": "...",        // Flagge Englisch
+
+    "de": {
+      "startGameFromMenu": "...",    // GUI-Texte auf Deutsch
+      "confirmSelection": "...",
+      "gameMessages": {
+        "takeTwo": "...",            // Spielhinweise, Systemmeldungen
+        "scanError": "...",
+        "correctPairFound1": "...",
+        "gameFinished1": "..."
+      }
+    },
+
+    "en": {
+      "startGameFromMenu": "...",    // Entsprechende Texte auf Englisch
+      "confirmSelection": "...",
+      "gameMessages": {
+        "takeTwo": "...",
+        "scanError": "...",
+        "correctPairFound1": "...",
+        "gameFinished1": "..."
+      }
+    },
+
+    "fr": {
+      "startGameFromMenu": "...",    // Und auf Französisch
+      "confirmSelection": "...",
+      "gameMessages": {
+        "takeTwo": "...",
+        "scanError": "...",
+        "correctPairFound1": "...",
+        "gameFinished1": "..."
+      }
+    }
+  },
+
+  "design": {
+    "themeColor": "...",          // HEX-Farbwert für Hauptfarbe
+    "fontSize": "...",            // Standardgröße z. B. "12pt"
+    "highlightColor": "...",      // Farbe für Hervorhebungen
+    "font": "..."                 // Pfad zur Schriftdatei
+  }
+}
+....

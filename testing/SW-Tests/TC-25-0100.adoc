@@ -1,0 +1,40 @@
+= Test Case Funktionalität Scanner
+
+|===
+|Doc-ID: | TC-25-0100
+|Datum: | 28.11.2024
+|Test durchgeführt durch: | Maurice Meier
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass die QR-Codes korrekt eingelesen werden.
+
+== Annahmen und Voraussetzungen
+
+- [x] Involvierte Hardwarekomponenten sind verbunden und in Betrieb (Pi, Kamera)
+- [x] Das Gletschery-Projekt ist auf dem Raspberry Pi gestartet
+
+== Testdaten
+
+Beliebiger QR-Code dessen Inhalt bekannt ist.
+
+== Auszuführende Schritte
+
+. QR-Code über die Kamera halten
+. Konsolenausgabe prüfen
+
+== Erwartetes Ergebnis
+
+Der Inhalt des QR-Codes wird korrekt ausgegeben.
+
+== Erzieltes Ergebnis
+
+Test bestanden!
+
+Entspricht dem erwarteten Ergebnis.
+
+== Bemerkungen
+
+-
+

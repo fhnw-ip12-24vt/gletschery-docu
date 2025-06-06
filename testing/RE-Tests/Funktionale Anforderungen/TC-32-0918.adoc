@@ -1,0 +1,47 @@
+= Test Case F09.UC18
+
+|===
+|Doc-ID: |TC-32-0918
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F09.UC18 – QR-Codes erfassen und Kartenpaar validieren**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das Spiel ist aktiv und befindet sich im Spielmodus
+- Die Scanfunktion ist funktionsfähig und korrekt mit der Spiel-Logik verbunden
+- Alle Karten verfügen über gültige, eindeutig zuordenbare QR-Codes
+
+== Testdaten
+- Zwei Karten mit passenden QR-Codes
+- Zwei Karten mit nicht-passenden QR-Codes
+- Kartenzuordnung gemäss JSON-Konfiguration
+
+== Auszuführende Schritte
+. Spieler scannt zwei Karten mit dem Scan-Button
+. System erfasst beide QR-Codes und vergleicht diese.
+. System prüft, ob das Kartenpaar gemäss JSON zueinander passen.
+. Ergebnis der Prüfung wird angezeigt auf dem Bildschirm.
+
+== Erwartetes Ergebnis
+- Die QR-Codes werden korrekt erkannt und in der Spiel-Logik verarbeitet.
+
+- Bei passenden Karten erscheint positives Feedback (grüner Rahmen)
+
+- Bei nicht-passenden Karten erscheint negatives Feedback (roter Rahmen)
+
+- Validierung erfolgt korrekt gemäss den konfigurierten Paaren im JSON-File.
+
+
+== Erzieltes Ergebnis
+QR-Codes werden vom System erkannt und der entsprechende Screen wird auf dem Bildschirm ausgegeben.
+
+== Bemerkungen
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

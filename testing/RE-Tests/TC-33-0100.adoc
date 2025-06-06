@@ -1,0 +1,19 @@
+= Test Case Spielspass
+
+|===
+|Doc-ID: |TC-33-0800
+|Datum: | 28.03.2025 und 09.04.2025
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- Das Spiel soll Spass machen, motivierend sein und die Spieler emotional ansprechen
+
+erfüllt werden kann.
+
+== Bemerkung
+
+Wird als Teil des Usability Testings in xref:../../UX-Tests/TC-33-0200.adoc[TC-33-0200] und xref:../../UX-Tests/TC-33-0201.adoc[TC-33-0201] abgehandelt.
+

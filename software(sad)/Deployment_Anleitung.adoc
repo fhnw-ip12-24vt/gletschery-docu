@@ -1,0 +1,86 @@
+= Anleitung: Gletschery
+
+== Depolyment
+
+=== GitHub
+
+*Repository-Link:* githubLink
+
+Laden Sie den Ordner Misc aus dem angegebenen GitHub-Repository herunter und speichern Sie die darin enthaltenen dateien auf dem Raspberry Pi an den beschriebenen Positionen.
+
+=== Dateien
+
+Die folgenden Datei- oder Dateigruppen sind an die jeweils angegebenen Verzeichnisse des primären Benutzers zu verschieben:
+
+==== Gletscher-Bilder
+
+Kopieren nach:
+
+`~/Pictures/gletscherImages`
+
+==== Icons und restliche Bilder
+
+Kopieren nach:
+
+`~/Pictures/generalImages`
+
+==== JSON-Datei
+
+Kopieren nach:
+
+`~/Documents`
+
+==== Bash-Skript: makeImage
+
+Kopieren nach:
+
+`~/Documents`
+
+=== Autostart
+
+Gletschery fungiert wie ein plug & play Spiel, das heisst,
+wenn es am Strom angesteckt ist und eingeschaltet ist, bootet das Spiel automatisch.
+Dies wird mithilfe eines Startskripts und Cron realisiert:
+
+1. Erstelle folgendes Directory:
+`/home/pi/scripts/`
+
+2. Kopiere `startScript.sh` in `/home/pi/scripts/`
+
+3. Gebe folgenden Befehl im Terminal ein: `crontab -e`
+und wähle einen präferierten Text-Editor.
+
+4. füge folgende Zeile hinzu: `@reboot sleep 10 && bash /home/pi/scripts/startScript.sh`
+
+5. starte den cron service, indem folgende Befehle eingegeben werden:
+
+** `sudo systemctl daemon-reload`
+
+** `sudo systemctl enable cron.service`
+
+** `sudo systemctl start cron.service`
+
+falls der Cron job scheduler bearbeitet werden muss, kann man dies mit dem folgenden command in bash tun:
+
+`crontab -e`
+
+Nun sollte Gletschery aufgehen, wenn der Rasperry Pi eingeschaltet wird.
+
+Wenn Gletschery geschlossen wird, wenn es am laufen ist (z.B. durch Alt+F4), muss man zuerst alle Instanzen von Gletschery beenden, bevor man es wieder starten kann.
+
+Dies kann man
+
+[#_daten]
+== Daten
+
+Wenn daten angepasst werden sollen passiert dies Grundsätzlich über das JSON.Unten werden die Häufigsten fälle kurz beschrieben.
+
+=== Gletscher hinzufügen oder entfernen
+Um einen Gletscher hinzuzufügen muss im JSON unter dem Punkt pairs einen Neuen Eintrag hinzugefügt werden.Siehe JSON Template
+
+
+=== Bilder ändern
+Um Bilder aktueller gletscher zu ändern müssen diese nur Im ordner GletscherImages ausgetauscht werden.Achten sie darauf das das neue Bild den selben Namen wie das alte hat.Ansonsten muss dies im JSON angepasst werden.
+
+=== Json übersicht
+xref:JsonTemplate.adoc[Json Template]

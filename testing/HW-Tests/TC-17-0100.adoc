@@ -1,0 +1,51 @@
+= Übersicht Funktionalität Bildschirm
+
+|===
+|Doc-ID: | TC-17-0100
+|Test durchgeführt durch: | Dominik Scheuber
+|===
+
+== Beschreibung
+
+Diese Übersicht fasst alle Test Cases zusammen, welche sicherstellen, dass der externe Bildschirm vom System erkannt wird und eine Ausgabe produziert.
+
+== Annahmen und Voraussetzungen
+
+Alle Komponenten sind vorhanden:
+
+- [x] Pi
+- [x] Bildschirm
+- [x] Datenkabel (HDMI)
+- [x] Stromkabel
+
+== Testdaten
+
+-
+
+== Auszuführende Schritte
+
+. Pi und Bildschirm an Strom anschliessen
+. Pi und Bildschirm mit HDMI Kabel verbinden
+
+== Erwartetes Ergebnis
+
+Pi erkennt Bildschirm und startet automatisch die Ausgabe der Raspberry-PI Desktop-Umgebung, welche auf dem Bildschirm sichtbar ist.
+
+== Erzieltes Ergebnis
+
+|===
+| Datum | Ergebnis | Bemerkung
+
+| 28.11.2024 | Bestanden | -
+| 29.11.2024 | Bestanden | -
+| 11.12.2024 | Bestanden | -
+| 19.01.2025 | Bestanden | -
+| 30.04.2025 | Bestanden | -
+| 06.05.2025 | Bestanden | -
+| 21.05.2025 | Bestanden | -
+
+|===
+
+== Bemerkungen
+
+Die Funktionalität des Bildschirms wurde im Verlauf des Projektes wiederholt getestet. Es wurden keine funktionalen Abweichungen festgestellt.

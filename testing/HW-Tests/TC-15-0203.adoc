@@ -1,0 +1,56 @@
+= Test Case Funktionalität Kamera 3
+
+|===
+|Doc-ID: | TC-15-0203
+|Datum: | 11.12.2024
+|Test durchgeführt durch: | Maurice Meier
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass das Kameramodul funktioniert und QR-Codes erkennen kann.
+
+== Annahmen und Voraussetzungen
+
+- Kameramodultest xref:TC-15-0202.adoc[TC-315-0202] wurde abgeschlossen.
+- Auf dem PI ist eine Software vorhanden, mit welcher ein QR-Code ausgelesen werden kann.
+
+Alle Komponenten sind vorhanden:
+
+- [x] Pi
+- [x] Kameramodul
+- [x] Datenkabel
+- [x] Stromkabel
+
+== Testdaten
+
+- Beliebiger QR-Code dessen Inhalt bekannt ist.
+- Eingebaute LED-Streifen.
+
+== Auszuführende Schritte
+
+. LED-Streifen im Gehäuse montieren und mit Strom verbinden
+. Pi an Strom anschliessen und einschalten
+. Starten der benötigten Software zum Einlesen eines QR-Codes
+. Beliebigen QR-Code mit bekanntem Inhalt im Sichtfeld der Kamera platzieren
+
+=== Testablauf
+
+. Starten der benötigten Software zum Einlesen eines QR-Codes
+. Beliebigen QR-Code mit bekanntem Inhalt im Sichtfeld der Kamera platzieren
+. Bei erfolgreichem Test, Wiederholung des Scanvorgangs an Rändern des Kamerasichtfeldes zur Überprüfung, ob der ganze Kamerabereich verwendet werden kann.
+
+== Erwartetes Ergebnis
+
+Der QR-Code wird als solcher erkannt und dessen Inhalt im Terminal ausgegeben.
+
+== Erzieltes Ergebnis
+
+Test fehlgeschlagen!
+
+Die PI Kamera fokussiert teilweise falsch und erkennt die QR-Codes nicht zuverlässig.
+
+== Bemerkungen
+
+Lösungen zur Fehlerbehebung werden ausgearbeitet. Autofokus festlegen und Bilder in Schwarz-Weiss darstellen -> besserer Kontrast.
+

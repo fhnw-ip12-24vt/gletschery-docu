@@ -1,0 +1,44 @@
+= Test Case Q04
+
+|===
+|Doc-ID: |TC-32-0400
+|Datum: | 18.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q04 - Benutzerfreundlichkeit:** Interaktive Elemente sind durch Symbole zusätzlich gekennzeichnet, sodass das Spiel auch für Personen mit Farbsehschwäche spielbar ist.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die Bildschirmausgabe ist implementiert und funktionstüchtig.
+- Das Spiel ist korrekt mit Strom versorgt.
+- Die Benutzeroberfläche ist vollständig geladen.
+
+== Testdaten
+
+- Eingabesystem: Buttons
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Beobachtung, ob die Hinweise, welcher Button welche Aktion ausführt, auf dem Bildschirm vorhanden sind.
+. Prüfen, ob die Symbole auf den Icons mit den Symbolen auf den physischen Buttons übereinstimmen.
+
+== Erwartetes Ergebnis
+
+Die Buttons sind durch eindeutige Symbole gekennzeichnet. Die Bedienbarkeit des Spiels ist unabhängig von der Farberkennung möglich.
+
+== Erzieltes Ergebnis
+
+Die interaktiven Elemente sind mit klar erkennbaren Symbolen versehen. Die Bedienung ist auch ohne Farberkennung möglich.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Die Anforderungen an barrierefreie Benutzerfreundlichkeit im Hinblick auf Farbsehschwächen wurden erfüllt.

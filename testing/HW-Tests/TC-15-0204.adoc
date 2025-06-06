@@ -1,0 +1,58 @@
+= Test Case Funktionalität Kamera 4
+
+|===
+|Doc-ID: | TC-15-0204
+|Datum: | 19.01.2025
+|Test durchgeführt durch: | Maurice Meier
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass das Kameramodul funktioniert und QR-Codes erkennen kann.
+
+== Annahmen und Voraussetzungen
+
+- Kameramodultest xref:TC-15-0203.adoc[TC-315-0203] wurde abgeschlossen.
+- Auf dem PI ist eine Software vorhanden, mit welcher ein QR-Code ausgelesen werden kann.
+
+Alle Komponenten sind vorhanden:
+
+- [x] Pi
+- [x] Kameramodul
+- [x] Datenkabel
+- [x] Stromkabel
+
+== Testdaten
+
+- Beliebiger QR-Code dessen Inhalt bekannt ist.
+- Eingebaute und abgeschirmte LED-Streifen (Vertiefung im Gehäuse)
+- Bilder für den Scan sind in Schwarz-Weiss hinterlegt.
+- Autofokus
+
+== Auszuführende Schritte
+
+. LED-Streifen im Gehäuse montieren und mit Strom verbinden
+. Pi an Strom anschliessen und einschalten
+. Starten der benötigten Software zum Einlesen eines QR-Codes
+. Beliebigen QR-Code mit bekanntem Inhalt im Sichtfeld der Kamera platzieren
+
+=== Testablauf
+
+. Starten der benötigten Software zum Einlesen eines QR-Codes
+. Beliebigen QR-Code mit bekanntem Inhalt im Sichtfeld der Kamera platzieren
+. Bei erfolgreichem Test, Wiederholung des Scanvorgangs an Rändern des Kamerasichtfeldes zur Überprüfung, ob der ganze Kamerabereich verwendet werden kann.
+
+== Erwartetes Ergebnis
+
+Der QR-Code wird als solcher erkannt und dessen Inhalt im Terminal ausgegeben.
+
+== Erzieltes Ergebnis
+
+Test fehlgeschlagen!
+
+Die Kamera kann QR-Codes nicht zuverlässig erkennen, wenn sie in verschiedenen Winkeln auf der Spieloberfläche liegen.
+
+== Bemerkungen
+
+Lösungen zur Fehlerbehebung werden ausgearbeitet. Ein Raster aus Holz mit Einlassungen, in welche die Karten hineingelegt werden können, sorgt dafür, dass die Karten alle gleich ausgerichtet sind.
+

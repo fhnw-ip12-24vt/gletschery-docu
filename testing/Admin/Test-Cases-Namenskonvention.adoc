@@ -1,0 +1,39 @@
+= Namenskonvention-TestCases
+
+== Aufbau
+
+**Ziffer 1:** Dokumentationsbereich
+
+- 1: Hardware
+- 2: Software
+- 3: Testing
+
+**Ziffer 2:** Rolle/Verantwortlichkeit
+
+- 1: PM - Projektmanagement
+- 2: RE - Requirements Engineering
+- 3: UX - User Experience
+- 4: SA - Software-Architektur
+- 5: DEV/SC - Source Code
+- 6: KOM - Kommunikation
+- 7: TM - Software Testing
+
+**Ziffer 4-5:** nummerisch aufsteigend oder Nummerierung Features
+
+- 1: 01
+- 2: 02
+- 3: 03
+
+**Ziffer 6-7:** Standardmässig 0, frei zur Versionierung oder Nummerierung der Use Cases
+
+- 1: 00
+- 1: 01
+
+== Beispiel Ziffern Zuordnen
+
+Test Case Funktionalität Bildschirm -> TC-32-0203
+
+- 3: Test Case betrifft Dokumentationsbereich Testing
+- 2: Test Case wird voraussichtlich von der Rolle RE ausgeführt
+- 02: Test Case betrifft Feature 2 (Memorykarten (PUI))
+- 03: TestCase handelt den Use Case 3 ab (Memorykarte aufdecken)

@@ -1,0 +1,23 @@
+= Licht
+
+*Datum:* Mi, 12.03.2025
+
+*Testziel:*
+
+- [x] Erfahrungswerte für die Positionierung einer Lichtquelle sammeln
+
+'''
+
+*Testdetails:*
+
+Das Innenleben der MDF-Box ist stark abgedunkelt, wodurch die Kamera die QR-Codes auf der Tischplatte nicht erkennt.
+
+Im Fachhandel wurde darum ein 3 m LED-Streifen gekauft.
+
+Die Positionierung des LEDs wurde an verschiedenen Orten und Richtungen innerhalb der Box getestet.
+
+Um Spiegelungen an der Plexiglasplatte zu verhindern wurde auch untersucht, ob eine Art Diffusor abhilfe schaffen würde.
+
+== Ergebnis
+
+Wenn der LED-Streifen weit oben in einer Vertiefung platziert wird, reduzieren sich die Spiegelungen auf ein Minimum. Wird die Box zusätzlich in Weiss ausgekleidet, werfen die Wände das Licht zurück und hellen die Box optisch weiter auf.

@@ -1,0 +1,52 @@
+= Test Case F02.UC03
+
+|===
+|Doc-ID: |TC-32-0203
+|Datum: | dd.mm.yyyy
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F02.UC03 - Memorykarte aufdecken**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Buttoneingaben werden korrekt erkannt.
+- Das System ist korrekt hochgefahren und befindet sich im Hauptmenü.
+- Memorykarten sin vollständig verteilt und mindestens zwei Karten befinden sich in einem noch nicht aufgedeckten Zustand.
+
+== Testdaten
+
+- Spieleranzahl: 2
+- Spielmodus: Multiplayer
+- 3D-gedruckte Memorykarten mit QR-Codes auf der Rückseite
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf START
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung erscheint.
+. Spieler*in dreht zwei Karten um und drückt auf den Scan-Knopf.
+- *Kartenpaar ist korrekt:* Bildschirm zeigt Gletscherbilder mit grünem Rand, einen Fakt und angepassten Punktestand.
+- *Kartenpaar ist falsch:* Bildschirm zeigt Gletscherbilder mit rotem Rand.
+
+== Erwartetes Ergebnis
+
+. Die beiden Karten zeigen unterschiedliche oder gleiche Bilder („vorher“/„nachher“) eines Gletschers.
+. Der Bildschirm stellt die gleichen Bilder von den Karten vergrössert dar.
+
+== Erzieltes Ergebnis
+
+. Bilder auf den Karten stimmen mit den Bildern auf dem Bildschirm überein.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.
+

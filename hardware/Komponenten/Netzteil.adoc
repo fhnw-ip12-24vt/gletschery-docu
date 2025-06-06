@@ -1,0 +1,33 @@
+= Netzteil
+
+|===
+|Key specifications |details
+
+| Hersteller
+| Traco Power
+
+|Model
+|TXN 75-105
+
+|Input
+|100 - 240 VAC; 50/60 HZ
+
+|Output
+|5 VDC;
+
+|weitere Dokumente
+|xref:../Documents/txn75_datasheet.pdf[Technical data sheet]
+
+|Produktlink
+|https://www.tracopower.com/model/txn-75-105[Link zum Produkt des Herstellers]
+|===
+
+Das Netzteil versorgt unser gesamtes System mit Spannung.
+
+Direkt an das Netzteil angeschlossen und mit 5V DC-Spannung versorgt werden:
+
+* der Raspberry Pi
+* der Bildschirm
+* das LED-Band
+
+

@@ -1,0 +1,49 @@
+= Test Case Q08
+
+|===
+|Doc-ID: |TC-32-0800
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q08 - Wartbarkeit:** Die Spielinhalte (Texte und Bilder) sind in einer externen JSON-Datei abgelegt und können ohne Änderung des Quellcodes angepasst werden.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die JSON-Datei mit Spielinhalten ist zugänglich und korrekt im Projekt eingebunden.
+- Das Spiel kann Inhalte beim Start aus dieser Datei laden.
+- Der Zugriff auf den Quellcode ist während des Tests ausgeschlossen.
+
+== Testdaten
+
+- JSON-Datei -> lokal auf dem PI abgelegt
+
+== Auszuführende Schritte
+
+. Stromzufuhr unterbrechen - das Spiel wird beendet.
+. JSON-Datei öffnen und beliebigen Textinhalt und Bildpfad verändern.
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Beobachtung, ob der geänderte Text korrekt und mit neuem Inhalt angezeigt wird.
+. Beobachtung, ob neu hinterlegtes Bild angezeigt wird.
+
+== Erwartetes Ergebnis
+
+. Geänderte Inhalte (Text und Bild) werden beim Start korrekt übernommen und angezeigt.
+. Der Quellcode bleibt unverändert.
+
+== Erzieltes Ergebnis
+
+. Text- und Bildänderungen wurde korrekt im Spiel dargestellt.
+. Quellcode unterliegt keiner Veränderung.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Wartbarkeit sichergestellt.
+

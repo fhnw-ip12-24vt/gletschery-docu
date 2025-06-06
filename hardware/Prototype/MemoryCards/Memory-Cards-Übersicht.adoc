@@ -1,0 +1,42 @@
+= Memory Card Übersicht
+
+*Datum:* Mi, 05.03.2025
+
+*Inhalt*
+
+Diese Übersicht dient der Dokumentation der QR-Codes und ihrer eindeutigen Zuordnung zu einer bestimmten Memorykarte.
+
+'''
+*Zuweisung*
+
+|===
+|QR-Code |Bild |Pfad
+
+|01A |XX |
+|01B |XX |
+|02A |XX |
+|02B |XX |
+|03A |XX |
+|03B |XX |
+|04A |XX |
+|04B |XX |
+|05A |XX |
+|05B |XX |
+|06A |XX |
+|06B |XX |
+|07A |XX |
+|07B |XX |
+|08A |XX |
+|08B |XX |
+|09A |XX |
+|09B |XX |
+|10A |XX |
+|10B |XX |
+|11A |XX |
+|11B |XX |
+|12A |XX |
+|12B |XX |
+
+|===
+
+Die Identifikationsnummer der QR-Codes setzt sich aus einer einzigartigen Zahl und dem Buchstaben 'A' oder 'B' zusammen. Der Buchstabe kennzeichnet dabei das historische bzw. das neuzeitliche Bild des Kartenpaares.

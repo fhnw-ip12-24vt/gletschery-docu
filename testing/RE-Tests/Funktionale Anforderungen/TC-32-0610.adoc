@@ -1,0 +1,47 @@
+= Test Case F06.UC10
+
+|===
+|Doc-ID: |TC-32-0610
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+*F06.UC10 – Spielschritt anleiten*
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das Spiel wurde korrekt gestartet und befindet sich in einer aktiven Spielphase.
+- Die Memorykarten wurden bereits verteilt.
+- Die grafische Benutzeroberfläche funktioniert einwandfrei.
+
+== Testdaten
+- Spieleranzahl: 2
+- Spielstatus: Spieler 1 hat seinen Spielzug beendet
+- Kartenpaare: 12 (24 Karten gesamt)
+
+== Auszuführende Schritte
+
+. Spieler 1 deckt zwei Karten auf.
+. Das System prüft automatisch, ob die Karten übereinstimmen, und zeigt das Ergebnis.
+. Nach dem Feedback zeigt das System eine Anweisung an, was als Nächstes zu tun ist.
+. Spieler 2 bestätigt die Anweisung über den grünen Knopf.
+. Das Spiel wechselt korrekt in den nächsten Spielschritt.
+
+== Erwartetes Ergebnis
+- Das System zeigt nach jedem Spielzug eine klare Anleitung, wie weitergespielt wird.
+- Die Anweisung ist visuell deutlich und für die Spieler verständlich dargestellt.
+- Nach Bestätigung erfolgt der Übergang zum nächsten Spielschritt korrekt.
+
+== Erzieltes Ergebnis
+- Die Anleitung zum nächsten Spielschritt wurde korrekt angezeigt.
+- Die Spieler konnten die Anweisung verstehen und ausführen.
+- Das Spiel wechselte fehlerfrei in die nächste Spielphase.
+
+== Bemerkungen
+
+Test erfolgreich durchgeführt. Keine funktionalen Probleme festgestellt.

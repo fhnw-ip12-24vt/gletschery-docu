@@ -1,0 +1,74 @@
+= Test Case Spielspass & Bewusstseinsvermittlung
+
+|===
+|Doc-ID: |TC-533-020
+|Datum: | 28.03.2025
+|Test durchgeführt durch: | Nora, Patrick, Aswin
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- Das Spiel soll Spass machen, motivierend sein und die Spieler emotional ansprechen
+- Das Spiel schafft Bewusstsein für die Auswirkungen der Gletscherschmelze durch interaktive Elemente und altersgerechte Information.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Fragebogen ist erstellt und an Spieler*innen verteilt
+- QR-Code Erkennung und Bildschirmausgabe sind implementiert
+- Hardwarekomponente (Knopf) für Einreichung Spielzug ist eingebaut
+
+== Testdaten
+
+- 6 Testpersonen (Alter: 12 bis 16 Jahre)
+
+- xref:Fragebogen UX-Testing 2.0.pdf[Fragebogen UX-Testing 2.0]
+
+
+== Auszuführende Schritte
+
+. Einführung in Usability Test durch UX und Aufbau Prototyp/Testumgebung
+. Übergabe Fragebogen an Testpersonen
+. Spieler*innen lesen in Ruhe den Fragebogen durch
+. Erklärung Projektstand und Ablauf Testing
+. **Spieler*innen spielen das Spiel**
+. **Spieler*innen füllen in Ruhe den Fragebogen aus**
+. Fragen klären & nochmals mündlich Feedback einholen
+. Abbau Prototyp/Testumgebung
+
+
+== Erwartetes Ergebnis
+
+Der Fragebogen ist von jeder Testperson vollständig ausgefüllt.
+
+Die Bewertung von Frage Nr. 11, 12 und 13 fällt in 5 von 6 Fällen positiv aus.
+
+== Protokoll Durchführung
+
+. Einführung Teammitglieder und Vorstellung Projekt
+. Erklärung Spielablauf und Funktionalität mit Betätigung Button und Scanvorgang
+. Abgabe Fragebogen und Zeit für die Spieler die Fragen durchzulesen
+. Vorschau der fertigen Screens im Figma und wie sich die Spieler die Darstellung während dem Spiel vorstellen können
+. Platzierung der Karten auf dem Spielfeld
+. **Spielen** -> Spieler melden, wann der Button von uns gedrückt werden soll
+. Fragen klären und Zeit um Fragebogen auszufüllen
+
+=== Feedback
+- Idee: Schwarzes oder weisses Raster (Folie?) um die Platzierung der Karten zu handhaben
+- Wie weiss das System, dass das Spiel fertig ist? Anhand der vordefinierten Library -> Verbesserung: Ergänzen, dass Anzahl der Kartenpaare selber gewählt werden kann
+
+== Erzieltes Ergebnis
+
+Test bestanden!
+
+Entspricht dem erwarteten Ergebnis.
+
+== Bemerkungen
+
+- Frage Nr. 11: 5 positiv (gut oder sehr gut), 1 negativ (schlecht oder sehr schlecht)
+- Frage Nr. 12: 6 Antworten mit JA
+- Frage Nr. 13: 6 positiv (gut oder sehr gut)
+

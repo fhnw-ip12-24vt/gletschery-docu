@@ -1,0 +1,168 @@
+[[section-deployment-view]]
+== Verteilungssicht
+Dieses Dokument beschreibt die technische Infrastruktur des Memory-Spiels und zeigt, wie die Softwarekomponenten auf die Hardware abgebildet werden. Das Spielsystem ist als physisch abgeschlossene, autonome Einheit in einer Holzkiste realisiert. Die gesamte Verarbeitung findet lokal auf einem Raspberry Pi 5 statt, der über Verkabelung mit Kamera und Display verbunden ist. Das System erfordert keine Netzwerkverbindung und ist auf Robustheit, Wartbarkeit und Performance ausgelegt.
+
+=== Infrastruktur Ebene 1
+
+==== Gesamtsystem
+
+Das System besteht aus einer einzigen physischen Einheit in Form einer robusten Holzkiste. Diese enthält alle notwendigen technischen Komponenten zur Ausführung des Spiels. Die Holzkiste ist fest verbaut und für die Interaktion im öffentlichen Raum (z. B. Ausstellung) konzipiert.
+
+==== Infrastrukturelemente
+[cols="1,3", options="header"]
+|===
+| Komponente | Beschreibung
+
+| **Holzgehäuse** | Trägt alle eingebauten Komponenten, schützt sie vor Umwelteinflüssen und mechanischer Belastung. Dient als physische Schnittstelle für die Spieler.
+
+| **Raspberry Pi 5** | Zentrale Recheneinheit. Führt die gesamte Spielsoftware aus, inklusive Bildverarbeitung, Spiellogik und GUI. Alle Komponenten sind direkt oder über Adapter angeschlossen.
+
+| **Kamera** | Angeschlossen über CSI-Schnittstelle oder USB. Erkennt QR-Codes auf Spielkarten beim Umdrehen. Position: unterhalb der transparenten Spielfläche, Blickrichtung nach oben.
+| **Display** | Angeschlossen über HDMI oder DSI. Zeigt Rückmeldungen, Spielinformationen und pädagogische Inhalte an. Position: an der Außenseite der Box, sichtbar für Spielende.
+
+| **Stromversorgung** | Netzteil mit 5 V / 3–5 A. Intern verlötet oder über USB-C angeschlossen. Über eine Steckverbindung nach aussen geführt.
+
+| **LEDs / Knöpfe ** | Arcade-Buttons mit 5-12 V, 5 V LED-Band. Intern verlötet.
+
+| **Output Expander ** | Output Expander für die Steuerung und Spannungsversorgung des LED-Bands. Siehe xref:../../hardware/Komponenten/LED-Steuerung.adoc[Komponenten: LED-Steuerung] für Verbindungsdetails.
+
+|===
+
+==== Verbindungskanäle
+
+- Kamera → CSI-Port oder USB 3.0 des Raspberry Pi 5
+- Display → HDMI-Ausgang des Raspberry Pi 5
+- Stromversorgung → USB-C oder GPIO
+- Interne Verdrahtung durch GPIO, Flachbandkabel oder verlötete Leitungen
+- Keine Netzwerkverbindung vorgesehen
+
+==== Umgebungen
+
+[cols="1,2", options="header"]
+|===
+| Umgebung | Beschreibung
+
+| **Entwicklungsumgebung** | Lokaler Arbeitsplatz, identische Hardware (Raspberry Pi 5), mit SSH-Zugang für Entwicklung und Debugging.
+
+| **Testumgebung** | Vollständige box, vollständig aufgebaut inkl. Kamera, Display und realer Spielfläche.
+
+| **Produktivumgebung** | Ausstellungsort (z. B. bei Primeo Energie), vollständig montiertes System in Holzkiste, im Dauerbetrieb, ohne externe Verbindung.
+|===
+
+==== Begründung der Verteilungsstruktur
+
+- Einfache Wartung und Austausch durch modulare Verkabelung innerhalb der Kiste
+- Keine Abhängigkeit von Netzwerkinfrastruktur oder Backend
+- Alle Softwarekomponenten lokal lauffähig → hohe Ausfallsicherheit
+- System kann per SD-Karten-Abbild dupliziert werden
+- Maximale Kontrolle über Laufzeitumgebung durch definiertes Linux-System
+
+==== Qualitäts- und Leistungsmerkmale
+
+- **Robustheit:** Holzkiste schützt Hardware vor äußeren Einflüssen
+- **Performance:** Raspberry Pi 5 bietet ausreichende Leistung für Java + OpenCV + GUI
+- **Wartbarkeit:** Konfigurierbare Inhalte (z. B. Kartentexte, Sprache) über JSON-Dateien
+
+==== Zuordnung von Softwareartefakten
+
+[cols="1,2", options="header"]
+|===
+| Softwareartefakt | Zugeordnetes Infrastrukturelement
+
+| Spiel-Engine (Java) | Raspberry Pi 5
+| QR-Code-Erkennung (ZXing) | Raspberry Pi 5
+| Bildverarbeitung (Ffmpeg) | Raspberry Pi 5
+| GUI (Trick17) | Raspberry Pi 5 + Display
+| Konfigurationsdateien (JSON,Bash scripts, Bilder) | SD-Karte oder Dateisystem auf Raspberry Pi
+|===
+=== Infrastruktur Ebene 2
+==== Verkabelung Sensoren
+
+[plantuml, verkabelung_sensoren, png]
+----
+@startuml
+node "Raspberry Pi 5" as Pi {
+  component "GPIO Header" as GPIO
+  component "Serial Port (UART)" as UART
+  component "CSI-Port" as CSI
+}
+
+component "Button Rot" as BtnRot
+component "Button Grün" as BtnGruen
+component "Button Weiß" as BtnWeiss
+component "Kamera\n(PiCam Modul 4)" as Cam
+component "LED-Anzeigeeinheit" as LED
+
+BtnRot --> GPIO : GPIO Pin (z. B. GPIO17)
+BtnGruen --> GPIO : GPIO Pin (z. B. GPIO27)
+BtnWeiss --> GPIO : GPIO Pin (z. B. GPIO22)
+
+Cam --> CSI : CSI-Schnittstelle (Daten + Strom)
+LED --> UART : TX/RX
+@enduml
+----
+
+.Erläuterungen:
+* **Button Rot / Grün / Weiss:** Alle Buttons sind über dedizierte GPIO-Pins des Raspberry Pi 5 angeschlossen. Sie erhalten 3.3V und GND vom Pi. Eingaben werden im Spiel als Benutzeraktionen interpretiert (z. B. Start, Auswahl, Bestätigung).
+* **Kamera:** Die PiCam Modul 4 ist über den CSI-Port verbunden. Sie wird automatisch vom System erkannt und über OpenCV angesteuert.
+* **LED:** Eine einzelne LED-Einheit.
+
+==== Verkabelung Strom
+
+[plantuml]
+----
+node "Netzteil 5V/3A" as PSU {
+  [USB-C OUT]
+}
+
+rectangle "Raspberry Pi 5" as Pi
+rectangle "Display" as Disp
+rectangle "LED-Steuerung" as LEDs
+
+PSU --> Pi : USB-C 5V
+PSU --> Disp : 5V Leitung (intern verlötet)
+
+Pi --> Camera : Stromversorgung über CSI (3.3V)
+Pi --> Buttons : GPIO 3.3V / GND
+Pi --> LEDs : 5V über UART-Board (nur Steuersignal)
+----
+
+.Erläuterungen:
+* Das Netzteil versorgt den Raspberry Pi 5 direkt über USB-C.
+* Das Display erhält Strom über eine interne Leitung direkt vom Netzteil oder vom Raspberry Pi (je nach Strombedarf).
+* Die Kamera (PiCam Modul 4) wird über den CSI-Port angeschlossen, der Strom direkt vom Pi liefert.
+* Buttons werden über die 3.3V-Pins der GPIO-Leiste versorgt.
+* LED-Steuerung erhält nur Signale über UART – Stromversorgung separat, sofern benötigt.
+
+==== Datenverwaltung
+
+[plantuml]
+----
+database "Dateisystem (/home/pi)" {
+  folder "Documents" {
+    file "config.json"
+    file "karten.json"
+    file "startup.sh"
+    file "reset.sh"
+  }
+  folder "Pictures" {
+    folder "gletscherImages" {
+      file "gletscher1.jpg"
+      file "gletscher2.jpg"
+    }
+    folder "generalImages" {
+      file "background.png"
+      file "icon.png"
+    }
+  }
+}
+----
+
+.Erläuterungen:
+* Alle programmrelevanten Daten liegen im Benutzerverzeichnis `/home/pi`.
+* **Konfigurationsdateien (JSON):** Unter `Documents/`, z. B. Kartenzuordnungen, Spracheinstellungen, Spieltexte.
+* **Steuerskripte (Bash):** Ebenfalls in `Documents/`, u. a. `startup.sh` (Spielstart) und `reset.sh` (Zurücksetzen).
+* **Bilddateien:** Unter `Pictures/` getrennt in:
+* `gletscherImages/` – enthält pädagogisch relevante Bilder zu Gletschern
+* `generalImages/` – UI-Bestandteile wie Hintergründe und Icons
+

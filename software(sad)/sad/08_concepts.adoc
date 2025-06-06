@@ -1,0 +1,71 @@
+[[section-concepts]]
+== Querschnittliche Konzepte
+=== Fachliche Konzepte
+
+==== Bewusstseinsbildung
+Das Spiel dient nicht nur der Unterhaltung, sondern verfolgt ein pädagogisches Ziel: Die Vermittlung von Wissen über Gletscher, deren Rückgang und die klimatischen Zusammenhänge. Dieses Ziel ist systemweit relevant und beeinflusst die inhaltliche Gestaltung der Karten, die Auswahl der Bilder sowie die Textbausteine der GUI.
+
+==== Memory
+Das Spiel basiert auf dem bekannten Memory-Prinzip. Zwei Karten mit gleichem Bild oder thematischem Zusammenhang müssen gefunden werden. Eine Übereinstimmung triggert die Anzeige weiterführender Informationen auf dem Bildschirm. Diese Spielmechanik bildet das Grundmodell für alle Interaktionen.
+
+=== User Experience (UX)
+
+==== Feedback-Verhalten
+Spielrückmeldungen erfolgen multimodal:
+
+* Visuell über Display (Text und Farbwechsel)
+* Namen der Gletscher und Bilder auf den physischen Karten
+
+==== Barrierefreiheit
+Das Spiel ist für Jugendliche ab 13 Jahren konzipiert. Farben und Kontraste wurden für gute Lesbarkeit gewählt. Steuerung erfolgt hardwareseitig über drei klar gekennzeichnete Tasten (Farbcodierung: Rot, Grün, Weiss).
+
+==== Steuerung
+Alle Spielaktionen werden über drei physische Buttons ausgelöst:
+
+* Rot = Spiel beenden / zurück
+* Grün = Bestätigen / Scannen
+* Weiss = Navigation
+
+Die Knöpfe sind bewusst mechanisch um einfache Bedienung zu garantieren.
+
+=== Sicherheitskonzepte
+
+==== Scan-Bildverarbeitung
+Bilder von der Kamera werden lokal und flüchtig verarbeitet:
+
+* Es erfolgt zwar eine Speicherung von Bilddaten, diese werden aber überschrieben und nach dem Beenden einer Runde gelöscht.
+* Verarbeitung direkt bei Erstellung, via FFMPEG.
+* Nur extrahierter QR-Text wird weiterverarbeitet.
+
+==== Hardwareschutz
+* Das System ist vollständig in einer verschlossenen Holzkiste untergebracht.
+
+=== Architektur- und Entwurfsmuster
+
+==== MVC
+Die Java-Anwendung folgt der **MVC** Architektur
+
+* **Model**: Spielzustand, Kartendaten
+* **View**: Anzeige auf dem Bildschirm
+* **Controller**: Programm logik
+
+==== Threads und zusätzliche Prozesse
+Die Anwendung ist multi-threaded:
+
+* **Thread 1**: Gletschery Game-Loop an sich (dauerhaft aktiv)
+* **Thread 2**: Scannen und Lesen nach QR-Codes(nur während Spiel aktiv)
+* **Prozess**: Zusätzlich wird ein Bash-Script ausgeführt welches jede Sekunde ein neues aktuelles Foto abspeichert.
+
+=== Unter der Haube
+
+==== GPIO und UART
+* Drei Buttons sind an dedizierte GPIO-Pins angeschlossen.
+* Eine LED wird über den UART (seriell) angesteuert über vorgeschalteten Mikrocontroller.
+* Alle GPIOs werden über PI4J verwaltet.
+
+==== Kameraeinbindung
+* Kamera: PiCam Modul 4, angebunden über CSI-Port
+* Zugriff: Libcamera und FFMPEG in Java
+* Verarbeitung: Live-Frame-Erfassung,
+* Performance: 1 fps
+

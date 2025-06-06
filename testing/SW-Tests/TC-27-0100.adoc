@@ -1,0 +1,57 @@
+= Test Case Projektabnahme
+
+|===
+|Doc-ID: | TC-27-0100
+|Datum: | 04.06.2024
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass sich die Software im finalen Zustand befindet und ein Spieldurchgang fehlerfrei durchlaufen werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Das System ist vollständig implementiert und alle Funktionen sind integriert.
+
+- Die Hardwarekomponenten sind korrekt installiert und betriebsbereit.
+
+- Die Software läuft fehlerfrei und befindet sich im finalen Zustand.
+
+== Testdaten
+
+- Spieleranzahl: 2
+- Spielmodus: Multiplayer
+- 3D-gedruckte Memorykarten mit QR-Codes auf der Rückseite
+- Stromversorgung und betriebsbereites Gerät
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen.
+. Beobachtung, ob das System automatisch hochgefahren wird.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf START
+. Spieler*in klickt durch die Spieleinführung und verteilt gemäss Spielanweisung Memorykarten auf dem Spielfeld.
+. Spieler*in bestätigt und die erste Spielanweisung erscheint.
+. Spieler*in dreht zwei Karten um und drückt auf den Scan-Knopf.
+. Beobachtung, ob das Kartenpaar korrekt vom Scanner erkannt wird.
+. Wiederholung der Schritte 6 - 8.
+. Beobachtung, ob die Punkte korrekt gezählt und der richtige Sieger gekürt wird.
+. Spieler*in navigiert zurück in das Startmenü.
+. Ende des Spieldurchgangs.
+
+== Erwartetes Ergebnis
+
+. System startet zuverlässig und zeigt UI in Deutsch an.
+. Kartenerkennung funktioniert innerhalb einer Sekunde pro Karte.
+. Punkte werden korrekt gezählt und angezeigt.
+. Spielablauf ist konsistent und verständlich.
+. Spiel kann fehlerfrei und ohne Unterbrechung durchlaufen werden.
+
+== Erzieltes Ergebnis
+
+Sobald das Spiel mit Strom versorgt wird, startet das System auf und das Spiel kann gespielt werden.
+
+== Bemerkungen
+
+Test erfolgreich bestanden!

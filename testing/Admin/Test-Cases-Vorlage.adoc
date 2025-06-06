@@ -1,0 +1,41 @@
+= Test Case (_TestNameHierEintragen_)
+
+|===
+|Doc-ID: |TC-000-000
+|Datum: | dd.mm.yyyy
+|Test durchgeführt durch: | (Namen hier eintragen)
+|===
+
+== Beschreibung
+
+(_Bitte eine Beschreibung des Tests hier eintragen oder ergänzen_)
+
+== Annahmen und Voraussetzungen
+
+(_Bitte Annahmen und Voraussetzungen hier eintragen oder ergänzen_)
+
+== Testdaten
+
+(_Bitte Testdaten hier eintragen wenn vorhanden; ansonsten -_)
+
+== Auszuführende Schritte
+
+(_Bitte ausgeführte Schritte hier eintragen oder ergänzen_)
+
+. Schritt Eins
+. Schritt Zwei
+
+== Erwartetes Ergebnis
+
+(Test bestanden! / nicht bestanden)
+
+(_Bitte erwartetes Ergebnis hier eintragen oder ergänzen_)
+
+== Erzieltes Ergebnis
+
+(_Bitte erzieltes Ergebnis hier eintragen_)
+
+== Bemerkungen
+
+(_Bitte hier Bemerkungen, Abweichungen, Ergänzungen oder Massnahmen zu diesem TestCase eintragen; ansonsten -_)
+

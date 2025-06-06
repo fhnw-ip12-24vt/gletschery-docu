@@ -1,0 +1,51 @@
+= Test Case Q02 & Q03
+
+|===
+|Doc-ID: |TC-33-0101
+|Datum: | 09.04.2025
+|Test durchgeführt durch: | Nora, Patrick, Aswin, Dominik
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q02: **Das Spiel benötigt keine separate Anleitung und erklärt sich durch das Design und die Interaktion von selbst.
+- **Q03: **Der Inhalt ist für die Zielgruppe angemessen und verständlich formuliert.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- QR-Code Erkennung und Bildschirmausgabe sind implementiert
+- Hardwarekomponente (Knopf) für Einreichung Spielzug ist eingebaut
+- Memorykarten sind mit Bildern versehen
+
+== Testdaten
+
+- Testpersonen (Alter: 9 bis 12 Jahre)
+
+== Auszuführende Schritte
+
+. Einführung in Usability Test durch UX und Aufbau Prototyp/Testumgebung
+. Erklärung Projektstand und Ablauf Testing
+. **Spieler*innen spielen das Spiel**
+. **Beobachtung und Feedback einholen durch Team**
+. Fragen klären & nochmals mündlich Feedback einholen
+. Abbau Prototyp/Testumgebung
+
+
+== Erwartetes Ergebnis
+
+Das Spiel ist klar verständlich und die Testpersonen können einen reibungslosen Durchgang spielen.
+
+== Erzieltes Ergebnis
+
+Test teilweise bestanden!
+
+== Bemerkungen
+
+Für die Kinder ist leicht verständlich was sie machen müssen und es entsteht schnell ein angenehmer Spielfluss.
+
+Jedoch haben wir für das Testing die Bilder und QR-Codes von 00 bis 08 und die Nummer 10 verwendet. Dadurch, dass es einen Unterbruch in den Nummern gab, funktionierte das Scannen für die Nummer 10 nicht und der Spielfluss war unterbrochen.
+

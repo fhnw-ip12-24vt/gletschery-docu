@@ -1,0 +1,53 @@
+= Test Case Q07
+
+|===
+|Doc-ID: |TC-32-0700
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+- **Q07 - Benutzerfreundlichkeit:** Alle Inhalte sind in den Sprachen Deutsch, Englisch und Französisch verfügbar.
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die grafische Benutzeroberfläche ist implementiert und funktionsfähig.
+- Das Spiel bietet eine Sprachwahloption.
+- Alle Texte sind in den drei Sprachen hinterlegt.
+
+== Testdaten
+
+- Spracheinstellung: Deutsch
+- Spracheinstellung: Englisch
+- Spracheinstellung: Französisch
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm. Sprache ist auf Deutsch eingestellt.
+. Spieler*in navigiert in das Menü *Sprache* und wählt die französische Flagge aus.
+. Beobachtung, ob das UI korrekt und vollständig auf Französisch umstellt.
+. Spieler*in wählt die britische Flagge aus.
+. Beobachtung, ob das UI korrekt und vollständig auf Englisch umstellt.
+. Spieler*in wählt die deutsche Flagge aus.
+. Beobachtung, ob das UI korrekt und vollständig auf Deutsch umstellt.
+
+== Erwartetes Ergebnis
+
+. Standardmässig und nch Auswahl von Deutsch wird die Benutzeroberfläche vollständig auf Deutsch dargestellt.
+. Nach Auswahl von Französisch wird die Benutzeroberfläche vollständig auf Französisch dargestellt.
+. Nach Auswahl von Englisch wird die Benutzeroberfläche vollständig auf Englisch dargestellt.
+
+== Erzieltes Ergebnis
+
+In allen drei getesteten Sprachen wurden sämtliche Texte korrekt dargestellt.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine fehlenden oder fehlerhaften Übersetzungen festgestellt.
+

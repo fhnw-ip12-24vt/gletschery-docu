@@ -1,0 +1,37 @@
+[[section-architecture-constraints]]
+== Randbedingungen
+=== Technische Einschränkungen
+.Performance
+Raspberry-Pi bietet eine limitierte Performance, welche bei der Entwicklung und Umsetzung beachtet werden muss. Zudem läuft auf dem Raspberry-Pi eine Linux Distribution, was bei der Umsetzung ebenso beachtet werden muss, da dies bei Aspekten wie Pfade von Ressourcen (z.B. Bildern) wichtig ist.
+
+.Lichtverhältnisse
+Dadurch, dass unser Produkt mit einer Kamera arbeitet, welche von unten QR-Codes scannt, können die Lichtverhältnisse im Raum und in der Box zu  Problemen führen. Sollte zu viel oder zu wenig Licht auf die Kameralinse treffen, kann dies zur schlechten Erkennung von QR-Codes führen.
+
+.QR-Code Erkennung
+Neben schlechten Lichtverhältnissen können weitere Faktoren, wie beispielsweise der Zustand der Memorykarten, die Erkennung des QR-Codes beeinflussen.
+
+.Java
+Ebenfalls wurde von der Programmleitung festgelegt, dass Java als Programmiersprache verwendet werden muss.
+
+==== Git-Versionierung
+Die Versionierung der Dokumentation und des Codes erfolgt gemäss den Vorgaben der Projektleitung mit Git und GitLab.
+
+.Richtlinien
+Damit die Dokumentation und der Code stets übersichtlich bleibt, werden Richtlinien festgelegt, die von den Teammitgliedern befolgt werden.
+
+.Namenskonvention
+Um die Übersicht zu behalten, welcher Branch wofür erstellt wurde, wurde eine Namenkonvention definiert, nach welcher gearbeitet wird.
+
+- **Code-Repository**
+** Name des Branches: "Feature-[NAME]"
+-> (z.B. Feature-Scanner)
+- **Dokumentation**
+** Name des Branches: [Rolle] -> (z.B. software-architect)
+
+.Erklärung
+Für jede Änderung im Code oder in der Dokumentation wird ein neuer Branch erstellt, der den definierten Namenskonventionen entspricht. Nach der Bearbeitung wird der Branch-Stand gepusht und schliesslich mit dem Main-Branch zusammengeführt. Der verwendete Branch wird nach dem Zusammenführen gelöscht.
+
+Im Gegensatz zur Code-Dokumentation wird das Mergen von Code im Code-Repository mit dem Main-Branch von anderen Teammitgliedern überprüft. Dies dient dazu, potenzielle Gefährdungen des bestehenden Codes und den damit verbundenen Aufwand zur Behebung von Problemen zu vermeiden. Die Überprüfung des Codes erfolgt durch den Software Developer oder Software Architect des Teams.
+
+
+

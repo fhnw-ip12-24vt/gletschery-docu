@@ -1,0 +1,49 @@
+= Test Case F07.UC12
+
+|===
+|Doc-ID: |TC-32-0712
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+*F07.UC12 – Visuelles Feedback nach Kartenwahl sehen*
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+	•	Das Spiel ist gestartet und ein Kartenset mit gültigen Paaren ist vorhanden.
+	•	Die grafische Benutzeroberfläche funktioniert fehlerfrei.
+	•	Eine Logik zur Erkennung von passenden und unpassenden Kartenpaaren ist implementiert.
+	•	Das Feedback erfolgt direkt auf dem Bildschirm nach dem Bestätigen des Kartenwahls.
+
+== Testdaten
+	•	Anzahl Kartenpaare: 12
+	•	Karten mit erkennbaren QR-Codes
+	•	Ein passendes und ein unpassendes Kartenpaar werden getestet
+
+== Auszuführende Schritte
+
+. Spiel wird gestartet und das Hauptmenü erscheint.
+. Spieler startet eine neue Runde.
+. Spieler deckt zwei passende Karten auf und bestätigt per Scan-Knopf.
+. Visuelles Feedback erscheint (grüner Rahmen, Faktenanzeige).
+. Spieler deckt zwei nicht passende Karten auf und bestätigt per Scan-Knopf.
+. Visuelles Feedback erscheint (z.B. roter Rahmen).
+
+== Erwartetes Ergebnis
+	•	Bei passenden Kartenpaaren wird ein positives visuelles Feedback angezeigt (grüner Rand, Gletscherbild, Punktestand aktualisiert).
+	•	Bei nicht passenden Kartenpaaren wird ein negatives Feedback angezeigt (roter Rand).
+	•	Feedback erscheint innerhalb von 1 Sekunde nach Bestätigung.
+
+== Erzieltes Ergebnis
+	•	Passende Karten führten zu grünem Rahmen, passendem Bild und Faktanzeige.
+	•	Nicht passende Karten führten zu rotem Rahmen.
+	•	Feedback war deutlich erkennbar und kam schnell.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Visuelles Feedback funktioniert wie vorgesehen.

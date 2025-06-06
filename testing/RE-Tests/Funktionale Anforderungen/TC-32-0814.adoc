@@ -1,0 +1,44 @@
+= Test Case F08.UC14
+
+|===
+|Doc-ID: |TC-32-0814
+|Datum: | 17.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+*F08.UC14 – Spiel starten*
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+- Das Spiel wurde korrekt geladen und das Hauptmenü ist sichtbar.
+
+- Der „Start“-Button ist gemäss Design sichtbar und funktional.
+
+- Alle nötigen Daten (Kartenset, Spracheinstellung, Spielerzahl) sind definiert im JSON-File.
+
+== Testdaten
+- Ein vollständiges Kartenset (12 Kartenpaare, 24 Karten)
+- Systemsprache: Deutsch
+- Zwei Spieler
+
+== Auszuführende Schritte
+. Anwendung starten → Hauptmenü erscheint.
+. Spieler klickt auf „Start“-Button.
+. Spiel leitet zum Spielfeld über und zeigt eine Anleitung zum Spiel.
+. durch das erneute Drücken auf den "Bestätigen-Button" startet das Spiel und der Spieler wird angewiesen, was er machen muss.
+
+== Erwartetes Ergebnis
+- Nach dem Drücken auf den „Start“-Button beginnt das Spiel.
+- Der Bildschirm wechselt vom Hauptmenü zur Anleitung.
+- Eine Anleitung zur Kartenverteilung erscheint.
+
+== Erzieltes Ergebnis
+Das Spiel startet korrekt auf und die Spieleinführung wird angezeigt.
+
+== Bemerkungen
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.

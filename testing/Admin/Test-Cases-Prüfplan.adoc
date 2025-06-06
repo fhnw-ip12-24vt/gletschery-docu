@@ -1,0 +1,89 @@
+= Testplan
+
+== Testziel
+
+Dieser Testplan soll sicherstellen, dass die Software, Hardware sowie deren Integration reibungslos funktionieren. Zudem werden Aspekte der Benutzerfreundlichkeit überprüft. Die Tests dienen dazu, Fehler frühzeitig zu identifizieren und eine stabile sowie nutzerfreundliche Anwendung zu gewährleisten.
+
+== Testumfang
+
+Die Tests werden in vier Hauptkategorien unterteilt: Software, Hardware, Requirements und User Experience
+
+=== 1. Software
+|===
+|Testtyp |Beschreibung |Methode
+
+|Funktionstests |Überprüfung der einzelnen Softwarekomponenten |Automatisiert
+
+|Systemtests |Testen der gesamten Software |Automatisiert
+
+|Regressionstests |Testen bereits bestandener Tests zur kontinuierlichen Überprüfung |Automatisiert
+|===
+
+=== 2. Hardware
+|===
+|Testtyp |Beschreibung |Methode
+
+|Funktionstests |Überprüfung der Grundfunktionen einzelner Hardwarekomponenten |Manuell (Kommandozeile)
+
+|Regressionstests |Erneute Durchführung bestehender Tests nach Änderungen an der Hardware oder Software |Manuell (Kommandozeile)
+|===
+
+=== 3. Requirement
+|===
+|Testtyp |Beschreibung |Methode
+
+|Funktionstests |Prüfung der Kommunikation zwischen Software und Hardware und Funktionalität Features |Manuell
+
+|===
+
+=== 4. User Experience
+|===
+|Testtyp |Beschreibung |Methode
+
+|Verständlichkeitstest |Bewertung der Verständlichkeit der Systemanweisungen |Manuell
+
+|Zugänglichkeitstest |Überprüfung der Zugänglichkeit des Systems für verschiedene Nutzer der Zielgruppe |Manuell
+
+|Zufriedenheitstests |Messung der Nutzerzufriedenheit |Manuell
+|===
+
+== Teststrategie
+
+Unterschiedliche Tests benötigen unterschiedliche Testmethoden, um eindeutige Ergebnisse zu erzielen.
+
+=== 1. Software
+Die Software wird von den Entwicklern mithilfe von JUnit-Tests und über eine Pipeline automatisiert getestet. Ein Merge in den main-Branch ist nur möglich, wenn alle Tests erfolgreich durchlaufen wurden.
+
+=== 2. Hardware
+Die Funktionalität der Hardware wird manuell via Kommandozeile überprüft. Dabei wird getestet, ob auf Befehl das erwartete Signal ausgegeben wird.
+
+=== 3. Requirement
+Das Zusammenspiel von Software und Hardware wird von Testern manuell überprüft. Hierfür werden alle Eingabemöglichkeiten getätigt und die Reaktion der Hardware beobachtet.
+
+=== 4. User Experience
+Die User Experience wird von der Zielgruppe bewertet. Hierfür wird den Endbenutzern ein Umfrageformular ausgehändigt, welches im Vorhinein erstellt wurde. Das Formular beinhaltet zwei Arten von Fragen:
+
+==== 4.1 Geschlossene Fragen
+Geschlossenen Fragen halten jeweils eine Likert-Skala mit vier Optionen (ja, eher ja, eher nein, nein) bereit. Die gerade Anzahl an Auswahlmöglichkeiten vermeiden eine neutrale Antwort und liefern ein eindeutigeres Ergebnis. Bei einer negativen Antwort wird ausserdem eine Begründung verlangt, für bessere Nachvollziehbarkeit.
+
+==== 4.2 Offene Fragen
+Offene Fragen sollen ausführlichere Meinungen motivieren und ein besseres Verständnis der Zielgruppe vermitteln.
+
+== Testumgebung
+
+* *Betriebssystem:* Windows/Rasperry Pi OS
+* *Entwicklungsumgebung:* IntelliJ
+* *Hardware:* Raspberry Pi, Raspberry Pi Kamera, Buttons(3x)
+* *Testframeworks:* JUnit für Softwaretests
+
+== Testrollen und Verantwortlichkeiten
+
+|===
+|Rolle |Verantwortlichkeiten
+
+|Testmanager (TM) |Koordination der Teststrategie, Testdurchführung, Reporting
+
+|Softwareentwickler (DEV) |Erstellung und Wartung automatisierter Tests
+
+|Usability-Tester (UX) |Sammlung und Analyse von Nutzerfeedback
+|===

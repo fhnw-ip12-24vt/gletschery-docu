@@ -1,0 +1,35 @@
+= Memory-Karten Test 2
+
+*Datum:* Di, 26.11.2024
+
+*Testziel:*
+
+- [x] Verschiedene Formen und Grössen testen, um Feedback für das Design zu erhalten
+
+'''
+
+*Testdetails:*
+
+Konstruktion Details
+
+- je zwei verschiedene Grössen: 70x70x5 und 60x60x5
+- je zwei verschiedene Eckformen: Fase und Radius
+- alle Karten haben oben und unten eine Vertiefung von 0.5 um Bild/QR-Code zu platzieren
+- alle scharfen Aussenkanten haben eine Fase von 0.5
+- Files: xref:3D_Files/memory-cards-v2 60x60x5.stl[memory-cards-v2 60x60x5.stl] ; xref:3D_Files/memory-cards-v2 60x60x5 radius.stl[memory-cards-v2 60x60x5 radius.stl] ; xref:3D_Files/memory-cards-v2 70x70x5.stl[memory-cards-v2 70x70x5.stl] ; xref:3D_Files/memory-cards-v2 70x70x5 radius.stl[memory-cards-v2 70x70x5 radius.stl]
+
+3D-Druck Details
+
+- Anzahl Karten: 4
+- Grössen: je zwei 60x60x5 und zwei 70x70x5
+- Form: beide Grössen einmal mit Fase und einmal mit Radius
+- Druckeinstellungen: Voreinstellungen modifiziert: PLA; 0.4 Nozzle; 0.2 Speed; rauePlatte; Infill: 40%, Füllmuster: Gyroid; generiere Stützmaterial + Stützen automatische generieren
+
+
+'''
+
+*Ergebnis:*
+
+- Grössen: 70x70 fühlt sich zu gross an -> Fokus auf 60x60
+- Qualität der Karten nicht mehr so gut wie beim ersten Test -> Analyse warum
+- Neue Geometrie mit Aussparung auf Ober- und Unterseite umsetzbar

@@ -1,0 +1,52 @@
+= Coding Conventions
+-Version 1.0
+== Verwendete Konventionen
+=== Dokument Aufbau
+    •	Package-Statement
+    •	Import-Anweisungen
+    •	Klassen-/Interface-Dokumentation als Javadoc-Kommentar, Einfacher mehrzeiliger Einleitungskommentar mit Angabe von Autor, Datum, Zweck des Programms
+    •	Klassen-/Interface-Statement
+    •	statische Variablen in der Reihenfolge public, protected, private
+    •	Instanzvariablen in der Reihenfolge public, protected, private
+    •	Konstruktoren
+    •	Methoden
+=== Namenskonventionen
+    •	Packages --> Immer Klein
+    •	Klassen --> CamelCase
+    •	Methoden & Variabeln --> drinkingCamelCase
+    •	Konstanten & Enums --> UPPER_CASE
+    •	Variabeln sollen aussagende Namen haben (String x --> Nicht aussagend, String nameOfPlayer --> aussagend)
+    •	Nur Counter Variabeln dürfen mit einzelnen Buchstaben benannt sein.
+
+=== Kommentare
+    •	Nach JavaDoc
+
+=== Klassen
+    •	Maximal 400 Zeilen
+    •	Hat nur 1 Aufgabe
+    
+=== Methoden
+    •	Maximal 40 Zeilen
+    •	Hat nur 1 Aufgabe
+    •	Verschachtelungsstife max 3
+
+=== Deklaration und Initialisierung
+    •	Pro Zeile eine Deklaration
+    •	Möglichst immer am Anfang eines Code Blocks
+
+=== Zeilen & Leerschläge
+    •	1 Tab --> 4 Leerschläge
+    •	Zeilen sind maximal 120 Zeichen lang
+
+=== Klassen-, Interface-, Methodendekleration
+    •	ein Leerzeichen zwischen Methodennamen und der folgenden öffnenden runden Klammer
+    •	Die öffnende geschweifte Klammer eines Blockes sollte, mit einem Leerzeichen getrennt, in der Zeile des  Deklarations-Statements stehen.
+    •	Die schließende geschweifte Klammer eines Blockes sollte in einer neuen Zeile auf Einrückungsebene des zugehörigen Statements erscheinen.
+
+=== Statements
+    •	Für jedes Statement sollte eine eigene Zeile verwendet werden.
+    •	Bei Bedingungen und Verzweigungen sollten, wie bei Methoden auch, die geschweiften öffnenden Klammern des Blockes am Ende der Statementzeile stehen. Die schließende geschweifte Klammer eröffnet eine neue Zeile auf Einrückungsebene des Statements.
+
+
+== Sicherstellung der Einhaltung der Konventionen
+Diese Konventionen werden durch die in IntelliJ definierten Code Style sowie durch regelmässige Code Reviews und Refactorings.

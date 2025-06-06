@@ -1,0 +1,55 @@
+= Test Case F04.UC07
+
+|===
+|Doc-ID: |TC-32-0407
+|Datum: | 15.05.2025
+|Test durchgeführt durch: | Nora Ramos
+|===
+
+== Beschreibung
+
+Der Test soll sicherstellen, dass
+
+**F04.UC07 – Auf Knopfdruck Kartenpaar prüfen**
+
+erfüllt werden kann.
+
+== Annahmen und Voraussetzungen
+
+- Die Bildschirmausgabe ist implementiert und funktionstüchtig.
+- Das Spiel ist korrekt mit Strom versorgt.
+- Die Benutzeroberfläche ist vollständig geladen.
+
+== Testdaten
+
+- Spieleranzahl: 2
+- Spielmodus: Multiplayer
+- Eingabesystem: Buttons
+- Spracheinstellung: Deutsch, Französisch, Englisch
+
+== Auszuführende Schritte
+
+. Stromzufuhr herstellen – das Spiel startet automatisch.
+. Startmenü erscheint auf dem Bildschirm.
+. Spieler*in drückt auf START.
+. Spieler*in klickt durch die Spieleinführung und erste Spielanweisung (Punktestand, Icon aktueller Spieler, Feedback: Spieler XY ist am Zug) erscheint.
+. Spieler*in dreht zwei nicht zusammengehörige Karten um und drückt auf den Scan-Knopf.
+- *Kartenpaar ist korrekt:* Bildschirm zeigt Gletscherbilder mit grünem Rand, einen Fakt und angepassten Punktestand.
+- *Kartenpaar ist falsch:* Bildschirm zeigt Gletscherbilder mit rotem Rand.
+
+== Erwartetes Ergebnis
+
+. Das System unterscheidet eindeutig zwischen passenden und nicht passenden Karten.
+. Rückmeldungen werden visuell klar und verständlich angezeigt.
+. Bei korrektem Paar: Punktestand aktualisiert, Spieler bleibt.
+. Bei falschem Paar: Spieler wird gewechselt.
+
+== Erzieltes Ergebnis
+
+. Alle Informationen wurden wie erwartet angezeigt.
+. Gletscherdaten wurden korrekt dargestellt.
+.Spielerwechsel und Punktestand funktionierten zuverlässig.
+
+== Bemerkungen
+
+Test erfolgreich abgeschlossen. Keine funktionalen Abweichungen festgestellt.
