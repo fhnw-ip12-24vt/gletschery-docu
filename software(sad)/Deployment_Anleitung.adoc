@@ -4,9 +4,9 @@
 
 === GitHub
 
-*Repository-Link:* githubLink
+* Repository-Link: https://github.com/fhnw-ip12-24vt/gletschery-docu/tree/main:[Link]
 
-Laden Sie den Ordner Misc aus dem angegebenen GitHub-Repository herunter und speichern Sie die darin enthaltenen dateien auf dem Raspberry Pi an den beschriebenen Positionen.
+Laden Sie den Ordner files aus dem angegebenen GitHub-Repository herunter und speichern Sie die darin enthaltenen dateien auf dem Raspberry Pi an den beschriebenen Positionen.
 
 === Dateien
 
@@ -38,6 +38,7 @@ Kopieren nach:
 
 === Autostart
 
+
 Gletschery fungiert wie ein plug & play Spiel, das heisst,
 wenn es am Strom angesteckt ist und eingeschaltet ist, bootet das Spiel automatisch.
 Dies wird mithilfe eines Startskripts und Cron realisiert:
@@ -52,7 +53,7 @@ und wähle einen präferierten Text-Editor.
 
 4. füge folgende Zeile hinzu: `@reboot sleep 10 && bash /home/pi/scripts/startScript.sh`
 
-5. starte den cron service, indem folgende Befehle eingegeben werden:
+5. starte den cron service, indem folgende Befehle im Terminal eingegeben werden:
 
 ** `sudo systemctl daemon-reload`
 
@@ -64,11 +65,21 @@ falls der Cron job scheduler bearbeitet werden muss, kann man dies mit dem folge
 
 `crontab -e`
 
-Nun sollte Gletschery aufgehen, wenn der Rasperry Pi eingeschaltet wird.
+Nun sollte Gletschery starten, wenn der Rasperry Pi eingeschaltet wird.
 
 Wenn Gletschery geschlossen wird, wenn es am laufen ist (z.B. durch Alt+F4), muss man zuerst alle Instanzen von Gletschery beenden, bevor man es wieder starten kann.
 
-Dies kann man
+Dies kann man entweder manuell machen mit Hilfe des folgendem bash commands:
+
+`sudo pkill -f Gletschery`
+
+oder man kann den command in einem executable bash script kopieren, und somit entweder bei Bedarf den Skript ausführen,
+oder den script in eine benutzeridentifizierte Applikation auf den Rasperry Pi verwandeln.
+
+Ein Tutorial wie das realisiert werden kann, findet man hier:
+
+https://www.youtube.com/watch?v=Y9_3DlFqc1Q
+
 
 [#_daten]
 == Daten
